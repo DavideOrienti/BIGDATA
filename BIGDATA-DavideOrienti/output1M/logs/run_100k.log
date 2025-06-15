@@ -1,0 +1,1293 @@
+25/06/15 18:09:47 WARN Utils: Your hostname, davide resolves to a loopback address: 127.0.1.1; using 10.0.2.15 instead (on interface enp0s3)
+25/06/15 18:09:47 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+25/06/15 18:09:48 INFO SparkContext: Running Spark version 3.5.5
+25/06/15 18:09:48 INFO SparkContext: OS info Linux, 6.11.0-26-generic, amd64
+25/06/15 18:09:48 INFO SparkContext: Java version 11.0.27
+25/06/15 18:09:48 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+25/06/15 18:09:48 INFO ResourceUtils: ==============================================================
+25/06/15 18:09:48 INFO ResourceUtils: No custom resources configured for spark.driver.
+25/06/15 18:09:48 INFO ResourceUtils: ==============================================================
+25/06/15 18:09:48 INFO SparkContext: Submitted application: Job 2 - Spark SQL
+25/06/15 18:09:48 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+25/06/15 18:09:48 INFO ResourceProfile: Limiting resource is cpu
+25/06/15 18:09:48 INFO ResourceProfileManager: Added ResourceProfile id: 0
+25/06/15 18:09:48 INFO SecurityManager: Changing view acls to: davide
+25/06/15 18:09:48 INFO SecurityManager: Changing modify acls to: davide
+25/06/15 18:09:48 INFO SecurityManager: Changing view acls groups to: 
+25/06/15 18:09:48 INFO SecurityManager: Changing modify acls groups to: 
+25/06/15 18:09:48 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: davide; groups with view permissions: EMPTY; users with modify permissions: davide; groups with modify permissions: EMPTY
+25/06/15 18:09:49 INFO Utils: Successfully started service 'sparkDriver' on port 42979.
+25/06/15 18:09:49 INFO SparkEnv: Registering MapOutputTracker
+25/06/15 18:09:49 INFO SparkEnv: Registering BlockManagerMaster
+25/06/15 18:09:49 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+25/06/15 18:09:49 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+25/06/15 18:09:49 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+25/06/15 18:09:49 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-4d1c2de4-6a18-4fcf-85ba-e31dca6256ce
+25/06/15 18:09:49 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+25/06/15 18:09:49 INFO SparkEnv: Registering OutputCommitCoordinator
+25/06/15 18:09:49 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+25/06/15 18:09:49 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+25/06/15 18:09:49 INFO Executor: Starting executor ID driver on host 10.0.2.15
+25/06/15 18:09:49 INFO Executor: OS info Linux, 6.11.0-26-generic, amd64
+25/06/15 18:09:49 INFO Executor: Java version 11.0.27
+25/06/15 18:09:49 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+25/06/15 18:09:49 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@238176a0 for default.
+25/06/15 18:09:50 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 39805.
+25/06/15 18:09:50 INFO NettyBlockTransferService: Server created on 10.0.2.15:39805
+25/06/15 18:09:50 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+25/06/15 18:09:50 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 10.0.2.15, 39805, None)
+25/06/15 18:09:50 INFO BlockManagerMasterEndpoint: Registering block manager 10.0.2.15:39805 with 434.4 MiB RAM, BlockManagerId(driver, 10.0.2.15, 39805, None)
+25/06/15 18:09:50 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 10.0.2.15, 39805, None)
+25/06/15 18:09:50 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 10.0.2.15, 39805, None)
+25/06/15 18:09:50 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+25/06/15 18:09:50 INFO SharedState: Warehouse path is 'file:/home/davide/BIGDATI/PROGETTO/Davide1/job2/Spark_sql/spark-warehouse'.
+25/06/15 18:09:52 INFO InMemoryFileIndex: It took 86 ms to list leaf files for 1 paths.
+25/06/15 18:09:54 INFO FileSourceStrategy: Pushed Filters: 
+25/06/15 18:09:54 INFO FileSourceStrategy: Post-Scan Filters: 
+25/06/15 18:09:54 INFO FileSourceStrategy: Pushed Filters: IsNotNull(city),IsNotNull(year)
+25/06/15 18:09:54 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(city#76),isnotnull(year#75)
+25/06/15 18:09:55 INFO CodeGenerator: Code generated in 353.048605 ms
+25/06/15 18:09:56 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 199.4 KiB, free 434.2 MiB)
+25/06/15 18:09:56 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 34.3 KiB, free 434.2 MiB)
+25/06/15 18:09:56 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.0.2.15:39805 (size: 34.3 KiB, free: 434.4 MiB)
+25/06/15 18:09:56 INFO SparkContext: Created broadcast 0 from showString at NativeMethodAccessorImpl.java:0
+25/06/15 18:09:56 INFO FileSourceScanExec: Planning scan with bin packing, max size: 34058944 bytes, open cost is considered as scanning 4194304 bytes.
+25/06/15 18:09:56 INFO DAGScheduler: Registering RDD 3 (showString at NativeMethodAccessorImpl.java:0) as input to shuffle 0
+25/06/15 18:09:56 INFO DAGScheduler: Got map stage job 0 (showString at NativeMethodAccessorImpl.java:0) with 8 output partitions
+25/06/15 18:09:56 INFO DAGScheduler: Final stage: ShuffleMapStage 0 (showString at NativeMethodAccessorImpl.java:0)
+25/06/15 18:09:56 INFO DAGScheduler: Parents of final stage: List()
+25/06/15 18:09:56 INFO DAGScheduler: Missing parents: List()
+25/06/15 18:09:56 INFO DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[3] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+25/06/15 18:09:56 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 51.6 KiB, free 434.1 MiB)
+25/06/15 18:09:56 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 22.9 KiB, free 434.1 MiB)
+25/06/15 18:09:56 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.0.2.15:39805 (size: 22.9 KiB, free: 434.3 MiB)
+25/06/15 18:09:56 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1585
+25/06/15 18:09:56 INFO DAGScheduler: Submitting 8 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[3] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7))
+25/06/15 18:09:56 INFO TaskSchedulerImpl: Adding task set 0.0 with 8 tasks resource profile 0
+25/06/15 18:09:56 INFO CodeGenerator: Code generated in 215.498429 ms
+25/06/15 18:09:56 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 199.4 KiB, free 433.9 MiB)
+25/06/15 18:09:57 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 34.3 KiB, free 433.9 MiB)
+25/06/15 18:09:57 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.0.2.15:39805 (size: 34.3 KiB, free: 434.3 MiB)
+25/06/15 18:09:57 INFO SparkContext: Created broadcast 2 from showString at NativeMethodAccessorImpl.java:0
+25/06/15 18:09:57 INFO FileSourceScanExec: Planning scan with bin packing, max size: 34058944 bytes, open cost is considered as scanning 4194304 bytes.
+25/06/15 18:09:57 INFO DAGScheduler: Registering RDD 7 (showString at NativeMethodAccessorImpl.java:0) as input to shuffle 1
+25/06/15 18:09:57 INFO DAGScheduler: Got map stage job 1 (showString at NativeMethodAccessorImpl.java:0) with 8 output partitions
+25/06/15 18:09:57 INFO DAGScheduler: Final stage: ShuffleMapStage 1 (showString at NativeMethodAccessorImpl.java:0)
+25/06/15 18:09:57 INFO DAGScheduler: Parents of final stage: List()
+25/06/15 18:09:57 INFO DAGScheduler: Missing parents: List()
+25/06/15 18:09:57 INFO DAGScheduler: Submitting ShuffleMapStage 1 (MapPartitionsRDD[7] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+25/06/15 18:09:57 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 52.6 KiB, free 433.8 MiB)
+25/06/15 18:09:57 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (10.0.2.15, executor driver, partition 0, ANY, 9602 bytes) 
+25/06/15 18:09:57 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 23.1 KiB, free 433.8 MiB)
+25/06/15 18:09:57 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 10.0.2.15:39805 (size: 23.1 KiB, free: 434.3 MiB)
+25/06/15 18:09:57 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1585
+25/06/15 18:09:57 INFO DAGScheduler: Submitting 8 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[7] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7))
+25/06/15 18:09:57 INFO TaskSchedulerImpl: Adding task set 1.0 with 8 tasks resource profile 0
+25/06/15 18:09:57 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1) (10.0.2.15, executor driver, partition 1, ANY, 9602 bytes) 
+25/06/15 18:09:57 INFO TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2) (10.0.2.15, executor driver, partition 2, ANY, 9602 bytes) 
+25/06/15 18:09:57 INFO TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3) (10.0.2.15, executor driver, partition 3, ANY, 9602 bytes) 
+25/06/15 18:09:57 INFO TaskSetManager: Starting task 4.0 in stage 0.0 (TID 4) (10.0.2.15, executor driver, partition 4, ANY, 9602 bytes) 
+25/06/15 18:09:57 INFO TaskSetManager: Starting task 5.0 in stage 0.0 (TID 5) (10.0.2.15, executor driver, partition 5, ANY, 9602 bytes) 
+25/06/15 18:09:57 INFO TaskSetManager: Starting task 6.0 in stage 0.0 (TID 6) (10.0.2.15, executor driver, partition 6, ANY, 9602 bytes) 
+25/06/15 18:09:57 INFO TaskSetManager: Starting task 7.0 in stage 0.0 (TID 7) (10.0.2.15, executor driver, partition 7, ANY, 9602 bytes) 
+25/06/15 18:09:57 INFO Executor: Running task 7.0 in stage 0.0 (TID 7)
+25/06/15 18:09:57 INFO Executor: Running task 4.0 in stage 0.0 (TID 4)
+25/06/15 18:09:57 INFO Executor: Running task 6.0 in stage 0.0 (TID 6)
+25/06/15 18:09:57 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+25/06/15 18:09:57 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+25/06/15 18:09:57 INFO Executor: Running task 5.0 in stage 0.0 (TID 5)
+25/06/15 18:09:57 INFO Executor: Running task 2.0 in stage 0.0 (TID 2)
+25/06/15 18:09:57 INFO Executor: Running task 3.0 in stage 0.0 (TID 3)
+25/06/15 18:09:57 INFO CodeGenerator: Code generated in 105.188194 ms
+25/06/15 18:09:57 INFO CodeGenerator: Code generated in 22.328257 ms
+25/06/15 18:09:58 INFO CodeGenerator: Code generated in 14.12004 ms
+25/06/15 18:09:58 INFO CodeGenerator: Code generated in 28.742704 ms
+25/06/15 18:09:58 INFO CodeGenerator: Code generated in 61.684146 ms
+25/06/15 18:09:58 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 0-34058944, partition values: [empty row]
+25/06/15 18:09:58 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 102176832-136235776, partition values: [empty row]
+25/06/15 18:09:58 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 68117888-102176832, partition values: [empty row]
+25/06/15 18:09:58 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 204353664-238412608, partition values: [empty row]
+25/06/15 18:09:58 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 34058944-68117888, partition values: [empty row]
+25/06/15 18:09:58 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 136235776-170294720, partition values: [empty row]
+25/06/15 18:09:58 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 238412608-268277252, partition values: [empty row]
+25/06/15 18:09:58 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 170294720-204353664, partition values: [empty row]
+25/06/15 18:09:58 INFO CodeGenerator: Code generated in 18.27391 ms
+25/06/15 18:10:04 INFO Executor: Finished task 7.0 in stage 0.0 (TID 7). 2805 bytes result sent to driver
+25/06/15 18:10:04 INFO Executor: Finished task 4.0 in stage 0.0 (TID 4). 2805 bytes result sent to driver
+25/06/15 18:10:04 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 8) (10.0.2.15, executor driver, partition 0, ANY, 9602 bytes) 
+25/06/15 18:10:04 INFO Executor: Running task 0.0 in stage 1.0 (TID 8)
+25/06/15 18:10:04 INFO Executor: Finished task 1.0 in stage 0.0 (TID 1). 2762 bytes result sent to driver
+25/06/15 18:10:04 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 9) (10.0.2.15, executor driver, partition 1, ANY, 9602 bytes) 
+25/06/15 18:10:04 INFO Executor: Running task 1.0 in stage 1.0 (TID 9)
+25/06/15 18:10:04 INFO Executor: Finished task 3.0 in stage 0.0 (TID 3). 2762 bytes result sent to driver
+25/06/15 18:10:04 INFO TaskSetManager: Finished task 4.0 in stage 0.0 (TID 4) in 7665 ms on 10.0.2.15 (executor driver) (1/8)
+25/06/15 18:10:04 INFO TaskSetManager: Finished task 7.0 in stage 0.0 (TID 7) in 7739 ms on 10.0.2.15 (executor driver) (2/8)
+25/06/15 18:10:04 INFO TaskSetManager: Starting task 2.0 in stage 1.0 (TID 10) (10.0.2.15, executor driver, partition 2, ANY, 9602 bytes) 
+25/06/15 18:10:04 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 7773 ms on 10.0.2.15 (executor driver) (3/8)
+25/06/15 18:10:04 INFO Executor: Running task 2.0 in stage 1.0 (TID 10)
+25/06/15 18:10:05 INFO TaskSetManager: Starting task 3.0 in stage 1.0 (TID 11) (10.0.2.15, executor driver, partition 3, ANY, 9602 bytes) 
+25/06/15 18:10:05 INFO Executor: Running task 3.0 in stage 1.0 (TID 11)
+25/06/15 18:10:05 INFO TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 7840 ms on 10.0.2.15 (executor driver) (4/8)
+25/06/15 18:10:05 INFO Executor: Finished task 5.0 in stage 0.0 (TID 5). 2762 bytes result sent to driver
+25/06/15 18:10:05 INFO TaskSetManager: Starting task 4.0 in stage 1.0 (TID 12) (10.0.2.15, executor driver, partition 4, ANY, 9602 bytes) 
+25/06/15 18:10:05 INFO Executor: Running task 4.0 in stage 1.0 (TID 12)
+25/06/15 18:10:05 INFO TaskSetManager: Finished task 5.0 in stage 0.0 (TID 5) in 7870 ms on 10.0.2.15 (executor driver) (5/8)
+25/06/15 18:10:05 INFO Executor: Finished task 6.0 in stage 0.0 (TID 6). 2805 bytes result sent to driver
+25/06/15 18:10:05 INFO TaskSetManager: Starting task 5.0 in stage 1.0 (TID 13) (10.0.2.15, executor driver, partition 5, ANY, 9602 bytes) 
+25/06/15 18:10:05 INFO TaskSetManager: Finished task 6.0 in stage 0.0 (TID 6) in 8055 ms on 10.0.2.15 (executor driver) (6/8)
+25/06/15 18:10:05 INFO Executor: Running task 5.0 in stage 1.0 (TID 13)
+25/06/15 18:10:05 INFO CodeGenerator: Code generated in 491.976934 ms
+25/06/15 18:10:05 INFO Executor: Finished task 2.0 in stage 0.0 (TID 2). 2762 bytes result sent to driver
+25/06/15 18:10:05 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2762 bytes result sent to driver
+25/06/15 18:10:05 INFO TaskSetManager: Starting task 6.0 in stage 1.0 (TID 14) (10.0.2.15, executor driver, partition 6, ANY, 9602 bytes) 
+25/06/15 18:10:05 INFO TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 8228 ms on 10.0.2.15 (executor driver) (7/8)
+25/06/15 18:10:05 INFO Executor: Running task 6.0 in stage 1.0 (TID 14)
+25/06/15 18:10:05 INFO TaskSetManager: Starting task 7.0 in stage 1.0 (TID 15) (10.0.2.15, executor driver, partition 7, ANY, 9602 bytes) 
+25/06/15 18:10:05 INFO Executor: Running task 7.0 in stage 1.0 (TID 15)
+25/06/15 18:10:05 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 8362 ms on 10.0.2.15 (executor driver) (8/8)
+25/06/15 18:10:05 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+25/06/15 18:10:05 INFO DAGScheduler: ShuffleMapStage 0 (showString at NativeMethodAccessorImpl.java:0) finished in 8,700 s
+25/06/15 18:10:05 INFO DAGScheduler: looking for newly runnable stages
+25/06/15 18:10:05 INFO DAGScheduler: running: Set(ShuffleMapStage 1)
+25/06/15 18:10:05 INFO DAGScheduler: waiting: Set()
+25/06/15 18:10:05 INFO DAGScheduler: failed: Set()
+25/06/15 18:10:05 INFO CodeGenerator: Code generated in 144.412459 ms
+25/06/15 18:10:05 INFO CodeGenerator: Code generated in 23.350613 ms
+25/06/15 18:10:05 INFO CodeGenerator: Code generated in 22.745652 ms
+25/06/15 18:10:05 INFO CodeGenerator: Code generated in 58.777359 ms
+25/06/15 18:10:05 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 102176832-136235776, partition values: [empty row]
+25/06/15 18:10:05 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 170294720-204353664, partition values: [empty row]
+25/06/15 18:10:05 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 34058944-68117888, partition values: [empty row]
+25/06/15 18:10:05 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 68117888-102176832, partition values: [empty row]
+25/06/15 18:10:05 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 238412608-268277252, partition values: [empty row]
+25/06/15 18:10:05 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 136235776-170294720, partition values: [empty row]
+25/06/15 18:10:05 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 204353664-238412608, partition values: [empty row]
+25/06/15 18:10:05 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 0-34058944, partition values: [empty row]
+25/06/15 18:10:06 INFO CodeGenerator: Code generated in 97.48714 ms
+25/06/15 18:10:06 INFO CodeGenerator: Code generated in 10.18932 ms
+25/06/15 18:10:06 INFO CodeGenerator: Code generated in 15.398775 ms
+25/06/15 18:10:07 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 10.0.2.15:39805 in memory (size: 22.9 KiB, free: 434.3 MiB)
+25/06/15 18:10:15 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:10:15 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:10:15 INFO TaskMemoryManager: Memory used in task 10
+25/06/15 18:10:15 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@21cd0e29: 52.2 MiB
+25/06/15 18:10:15 INFO TaskMemoryManager: Acquired by org.apache.spark.sql.catalyst.expressions.VariableLengthRowBasedKeyValueBatch@4a24fb9a: 2048.0 KiB
+25/06/15 18:10:15 INFO TaskMemoryManager: 0 bytes of memory were used by task 10 but are not associated with specific consumers
+25/06/15 18:10:15 INFO TaskMemoryManager: 421770662 bytes of memory are used for execution and 556083 bytes of memory are used for storage
+25/06/15 18:10:15 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:10:15 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:10:15 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:10:15 INFO TaskMemoryManager: Memory used in task 15
+25/06/15 18:10:15 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@1c8097c5: 52.2 MiB
+25/06/15 18:10:15 INFO TaskMemoryManager: Acquired by org.apache.spark.sql.catalyst.expressions.VariableLengthRowBasedKeyValueBatch@15939fdd: 2048.0 KiB
+25/06/15 18:10:15 INFO TaskMemoryManager: 0 bytes of memory were used by task 15 but are not associated with specific consumers
+25/06/15 18:10:15 INFO TaskMemoryManager: 424358530 bytes of memory are used for execution and 556083 bytes of memory are used for storage
+25/06/15 18:10:15 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:10:15 INFO TaskMemoryManager: Memory used in task 12
+25/06/15 18:10:15 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@36dea9cf: 52.2 MiB
+25/06/15 18:10:15 INFO TaskMemoryManager: Acquired by org.apache.spark.sql.catalyst.expressions.VariableLengthRowBasedKeyValueBatch@3b50cd55: 2048.0 KiB
+25/06/15 18:10:15 INFO TaskMemoryManager: 0 bytes of memory were used by task 12 but are not associated with specific consumers
+25/06/15 18:10:15 INFO TaskMemoryManager: 441135746 bytes of memory are used for execution and 556083 bytes of memory are used for storage
+25/06/15 18:10:15 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:10:15 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:10:15 INFO TaskMemoryManager: Memory used in task 8
+25/06/15 18:10:15 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@6f7ee79c: 52.2 MiB
+25/06/15 18:10:15 INFO TaskMemoryManager: Acquired by org.apache.spark.sql.catalyst.expressions.VariableLengthRowBasedKeyValueBatch@2a822b31: 2048.0 KiB
+25/06/15 18:10:15 INFO TaskMemoryManager: 0 bytes of memory were used by task 8 but are not associated with specific consumers
+25/06/15 18:10:15 INFO TaskMemoryManager: 435089640 bytes of memory are used for execution and 556083 bytes of memory are used for storage
+25/06/15 18:10:16 INFO CodeGenerator: Code generated in 113.131395 ms
+25/06/15 18:10:16 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:10:16 INFO CodeGenerator: Code generated in 144.385877 ms
+25/06/15 18:10:16 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:10:16 INFO TaskMemoryManager: Memory used in task 9
+25/06/15 18:10:16 INFO TaskMemoryManager: Acquired by org.apache.spark.sql.catalyst.expressions.VariableLengthRowBasedKeyValueBatch@46d1d709: 2048.0 KiB
+25/06/15 18:10:16 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@4e9b4a82: 52.2 MiB
+25/06/15 18:10:16 INFO TaskMemoryManager: 0 bytes of memory were used by task 9 but are not associated with specific consumers
+25/06/15 18:10:16 INFO TaskMemoryManager: 443723550 bytes of memory are used for execution and 556083 bytes of memory are used for storage
+25/06/15 18:10:16 INFO UnsafeExternalSorter: Thread 75 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:16 INFO UnsafeExternalSorter: Thread 71 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:16 INFO UnsafeExternalSorter: Thread 72 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:16 INFO UnsafeExternalSorter: Thread 73 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:16 INFO UnsafeExternalSorter: Thread 77 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:17 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:10:17 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:10:17 INFO TaskMemoryManager: Memory used in task 13
+25/06/15 18:10:17 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@16e371f7: 52.2 MiB
+25/06/15 18:10:17 INFO TaskMemoryManager: Acquired by org.apache.spark.sql.catalyst.expressions.VariableLengthRowBasedKeyValueBatch@5213f55e: 2048.0 KiB
+25/06/15 18:10:17 INFO TaskMemoryManager: 0 bytes of memory were used by task 13 but are not associated with specific consumers
+25/06/15 18:10:17 INFO TaskMemoryManager: 446066052 bytes of memory are used for execution and 556083 bytes of memory are used for storage
+25/06/15 18:10:17 INFO UnsafeExternalSorter: Thread 76 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:18 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:10:18 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:10:18 INFO TaskMemoryManager: Memory used in task 11
+25/06/15 18:10:18 INFO TaskMemoryManager: Acquired by org.apache.spark.sql.catalyst.expressions.VariableLengthRowBasedKeyValueBatch@6ce0fec7: 2048.0 KiB
+25/06/15 18:10:18 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@27a68001: 52.2 MiB
+25/06/15 18:10:18 INFO TaskMemoryManager: 0 bytes of memory were used by task 11 but are not associated with specific consumers
+25/06/15 18:10:18 INFO TaskMemoryManager: 452602826 bytes of memory are used for execution and 556083 bytes of memory are used for storage
+25/06/15 18:10:18 INFO UnsafeExternalSorter: Thread 74 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:18 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:10:18 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:10:18 INFO TaskMemoryManager: Memory used in task 14
+25/06/15 18:10:18 INFO TaskMemoryManager: Acquired by org.apache.spark.sql.catalyst.expressions.VariableLengthRowBasedKeyValueBatch@3ef50dd2: 2048.0 KiB
+25/06/15 18:10:18 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@9852f09: 52.2 MiB
+25/06/15 18:10:18 INFO TaskMemoryManager: 0 bytes of memory were used by task 14 but are not associated with specific consumers
+25/06/15 18:10:18 INFO TaskMemoryManager: 454945328 bytes of memory are used for execution and 556083 bytes of memory are used for storage
+25/06/15 18:10:18 INFO UnsafeExternalSorter: Thread 70 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:25 INFO UnsafeExternalSorter: Thread 75 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:10:25 INFO UnsafeExternalSorter: Thread 72 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:10:26 INFO UnsafeExternalSorter: Thread 71 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:10:26 INFO UnsafeExternalSorter: Thread 70 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:27 INFO CodeGenerator: Code generated in 7.798082 ms
+25/06/15 18:10:27 INFO UnsafeExternalSorter: Thread 73 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:27 INFO UnsafeExternalSorter: Thread 74 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:10:27 INFO UnsafeExternalSorter: Thread 76 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:27 INFO UnsafeExternalSorter: Thread 77 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:32 INFO Executor: Finished task 1.0 in stage 1.0 (TID 9). 3059 bytes result sent to driver
+25/06/15 18:10:32 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 9) in 27523 ms on 10.0.2.15 (executor driver) (1/8)
+25/06/15 18:10:32 INFO Executor: Finished task 7.0 in stage 1.0 (TID 15). 3016 bytes result sent to driver
+25/06/15 18:10:32 INFO TaskSetManager: Finished task 7.0 in stage 1.0 (TID 15) in 27072 ms on 10.0.2.15 (executor driver) (2/8)
+25/06/15 18:10:32 INFO Executor: Finished task 4.0 in stage 1.0 (TID 12). 3016 bytes result sent to driver
+25/06/15 18:10:32 INFO TaskSetManager: Finished task 4.0 in stage 1.0 (TID 12) in 27684 ms on 10.0.2.15 (executor driver) (3/8)
+25/06/15 18:10:32 INFO Executor: Finished task 6.0 in stage 1.0 (TID 14). 3016 bytes result sent to driver
+25/06/15 18:10:32 INFO TaskSetManager: Finished task 6.0 in stage 1.0 (TID 14) in 27425 ms on 10.0.2.15 (executor driver) (4/8)
+25/06/15 18:10:32 INFO Executor: Finished task 5.0 in stage 1.0 (TID 13). 3016 bytes result sent to driver
+25/06/15 18:10:32 INFO TaskSetManager: Finished task 5.0 in stage 1.0 (TID 13) in 27737 ms on 10.0.2.15 (executor driver) (5/8)
+25/06/15 18:10:33 INFO Executor: Finished task 3.0 in stage 1.0 (TID 11). 3016 bytes result sent to driver
+25/06/15 18:10:33 INFO TaskSetManager: Finished task 3.0 in stage 1.0 (TID 11) in 28039 ms on 10.0.2.15 (executor driver) (6/8)
+25/06/15 18:10:33 INFO Executor: Finished task 0.0 in stage 1.0 (TID 8). 3016 bytes result sent to driver
+25/06/15 18:10:33 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 8) in 28461 ms on 10.0.2.15 (executor driver) (7/8)
+25/06/15 18:10:33 INFO Executor: Finished task 2.0 in stage 1.0 (TID 10). 3059 bytes result sent to driver
+25/06/15 18:10:33 INFO TaskSetManager: Finished task 2.0 in stage 1.0 (TID 10) in 28262 ms on 10.0.2.15 (executor driver) (8/8)
+25/06/15 18:10:33 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+25/06/15 18:10:33 INFO DAGScheduler: ShuffleMapStage 1 (showString at NativeMethodAccessorImpl.java:0) finished in 36,082 s
+25/06/15 18:10:33 INFO DAGScheduler: looking for newly runnable stages
+25/06/15 18:10:33 INFO DAGScheduler: running: Set()
+25/06/15 18:10:33 INFO DAGScheduler: waiting: Set()
+25/06/15 18:10:33 INFO DAGScheduler: failed: Set()
+25/06/15 18:10:33 INFO ShufflePartitionsUtil: For shuffle(1), advisory target size: 67108864, actual target size 17112310, minimum partition size: 1048576
+25/06/15 18:10:33 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+25/06/15 18:10:33 INFO CodeGenerator: Code generated in 19.356121 ms
+25/06/15 18:10:33 INFO CodeGenerator: Code generated in 10.763341 ms
+25/06/15 18:10:33 INFO SparkContext: Starting job: showString at NativeMethodAccessorImpl.java:0
+25/06/15 18:10:33 INFO DAGScheduler: Got job 2 (showString at NativeMethodAccessorImpl.java:0) with 9 output partitions
+25/06/15 18:10:33 INFO DAGScheduler: Final stage: ResultStage 3 (showString at NativeMethodAccessorImpl.java:0)
+25/06/15 18:10:33 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 2)
+25/06/15 18:10:33 INFO DAGScheduler: Missing parents: List()
+25/06/15 18:10:33 INFO DAGScheduler: Submitting ResultStage 3 (MapPartitionsRDD[12] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+25/06/15 18:10:33 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 52.1 KiB, free 433.8 MiB)
+25/06/15 18:10:33 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 23.7 KiB, free 433.8 MiB)
+25/06/15 18:10:33 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 10.0.2.15:39805 (size: 23.7 KiB, free: 434.3 MiB)
+25/06/15 18:10:33 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1585
+25/06/15 18:10:33 INFO DAGScheduler: Submitting 9 missing tasks from ResultStage 3 (MapPartitionsRDD[12] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8))
+25/06/15 18:10:33 INFO TaskSchedulerImpl: Adding task set 3.0 with 9 tasks resource profile 0
+25/06/15 18:10:33 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 16) (10.0.2.15, executor driver, partition 0, NODE_LOCAL, 8999 bytes) 
+25/06/15 18:10:33 INFO TaskSetManager: Starting task 1.0 in stage 3.0 (TID 17) (10.0.2.15, executor driver, partition 1, NODE_LOCAL, 8999 bytes) 
+25/06/15 18:10:33 INFO TaskSetManager: Starting task 2.0 in stage 3.0 (TID 18) (10.0.2.15, executor driver, partition 2, NODE_LOCAL, 8999 bytes) 
+25/06/15 18:10:33 INFO TaskSetManager: Starting task 3.0 in stage 3.0 (TID 19) (10.0.2.15, executor driver, partition 3, NODE_LOCAL, 8999 bytes) 
+25/06/15 18:10:33 INFO TaskSetManager: Starting task 4.0 in stage 3.0 (TID 20) (10.0.2.15, executor driver, partition 4, NODE_LOCAL, 8999 bytes) 
+25/06/15 18:10:33 INFO TaskSetManager: Starting task 5.0 in stage 3.0 (TID 21) (10.0.2.15, executor driver, partition 5, NODE_LOCAL, 8999 bytes) 
+25/06/15 18:10:33 INFO TaskSetManager: Starting task 6.0 in stage 3.0 (TID 22) (10.0.2.15, executor driver, partition 6, NODE_LOCAL, 8999 bytes) 
+25/06/15 18:10:33 INFO TaskSetManager: Starting task 7.0 in stage 3.0 (TID 23) (10.0.2.15, executor driver, partition 7, NODE_LOCAL, 8999 bytes) 
+25/06/15 18:10:33 INFO Executor: Running task 0.0 in stage 3.0 (TID 16)
+25/06/15 18:10:33 INFO Executor: Running task 2.0 in stage 3.0 (TID 18)
+25/06/15 18:10:33 INFO Executor: Running task 1.0 in stage 3.0 (TID 17)
+25/06/15 18:10:33 INFO Executor: Running task 3.0 in stage 3.0 (TID 19)
+25/06/15 18:10:33 INFO Executor: Running task 5.0 in stage 3.0 (TID 21)
+25/06/15 18:10:33 INFO Executor: Running task 7.0 in stage 3.0 (TID 23)
+25/06/15 18:10:33 INFO Executor: Running task 6.0 in stage 3.0 (TID 22)
+25/06/15 18:10:33 INFO Executor: Running task 4.0 in stage 3.0 (TID 20)
+25/06/15 18:10:34 INFO ShuffleBlockFetcherIterator: Getting 8 (15.7 MiB) non-empty blocks including 8 (15.7 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:34 INFO ShuffleBlockFetcherIterator: Getting 8 (15.7 MiB) non-empty blocks including 8 (15.7 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:34 INFO ShuffleBlockFetcherIterator: Getting 8 (15.7 MiB) non-empty blocks including 8 (15.7 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:34 INFO ShuffleBlockFetcherIterator: Getting 8 (16.2 MiB) non-empty blocks including 8 (16.2 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:34 INFO ShuffleBlockFetcherIterator: Getting 8 (16.3 MiB) non-empty blocks including 8 (16.3 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:34 INFO ShuffleBlockFetcherIterator: Getting 8 (16.3 MiB) non-empty blocks including 8 (16.3 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:34 INFO ShuffleBlockFetcherIterator: Getting 8 (16.3 MiB) non-empty blocks including 8 (16.3 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:34 INFO ShuffleBlockFetcherIterator: Getting 8 (16.3 MiB) non-empty blocks including 8 (16.3 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:34 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 54 ms
+25/06/15 18:10:34 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 50 ms
+25/06/15 18:10:34 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 56 ms
+25/06/15 18:10:34 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 56 ms
+25/06/15 18:10:34 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 56 ms
+25/06/15 18:10:34 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 56 ms
+25/06/15 18:10:34 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 54 ms
+25/06/15 18:10:34 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 58 ms
+25/06/15 18:10:34 INFO CodeGenerator: Code generated in 113.161221 ms
+25/06/15 18:10:34 INFO CodeGenerator: Code generated in 12.149962 ms
+25/06/15 18:10:35 INFO TaskMemoryManager: Memory used in task 17
+25/06/15 18:10:35 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@15913041: 54.2 MiB
+25/06/15 18:10:35 INFO TaskMemoryManager: 0 bytes of memory were used by task 17 but are not associated with specific consumers
+25/06/15 18:10:35 INFO TaskMemoryManager: 402886725 bytes of memory are used for execution and 633790 bytes of memory are used for storage
+25/06/15 18:10:35 INFO UnsafeExternalSorter: Thread 77 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:35 INFO TaskMemoryManager: Memory used in task 23
+25/06/15 18:10:35 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@137b22d1: 54.2 MiB
+25/06/15 18:10:35 INFO TaskMemoryManager: 0 bytes of memory were used by task 23 but are not associated with specific consumers
+25/06/15 18:10:35 INFO TaskMemoryManager: 432482410 bytes of memory are used for execution and 633790 bytes of memory are used for storage
+25/06/15 18:10:36 INFO UnsafeExternalSorter: Thread 71 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:36 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 10.0.2.15:39805 in memory (size: 23.1 KiB, free: 434.3 MiB)
+25/06/15 18:10:36 INFO TaskMemoryManager: Memory used in task 16
+25/06/15 18:10:36 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@57075e35: 54.2 MiB
+25/06/15 18:10:36 INFO TaskMemoryManager: 0 bytes of memory were used by task 16 but are not associated with specific consumers
+25/06/15 18:10:36 INFO TaskMemoryManager: 439019093 bytes of memory are used for execution and 556301 bytes of memory are used for storage
+25/06/15 18:10:36 INFO TaskMemoryManager: Memory used in task 20
+25/06/15 18:10:36 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@20196bb: 54.2 MiB
+25/06/15 18:10:36 INFO TaskMemoryManager: 0 bytes of memory were used by task 20 but are not associated with specific consumers
+25/06/15 18:10:36 INFO TaskMemoryManager: 441606907 bytes of memory are used for execution and 556301 bytes of memory are used for storage
+25/06/15 18:10:36 INFO TaskMemoryManager: Memory used in task 21
+25/06/15 18:10:36 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@13d22b62: 54.2 MiB
+25/06/15 18:10:36 INFO TaskMemoryManager: 0 bytes of memory were used by task 21 but are not associated with specific consumers
+25/06/15 18:10:36 INFO TaskMemoryManager: 441606907 bytes of memory are used for execution and 556301 bytes of memory are used for storage
+25/06/15 18:10:36 INFO UnsafeExternalSorter: Thread 73 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:36 INFO UnsafeExternalSorter: Thread 70 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:36 INFO UnsafeExternalSorter: Thread 75 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:36 INFO TaskMemoryManager: Memory used in task 22
+25/06/15 18:10:36 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@9af0cc0: 54.2 MiB
+25/06/15 18:10:36 INFO TaskMemoryManager: 0 bytes of memory were used by task 22 but are not associated with specific consumers
+25/06/15 18:10:36 INFO TaskMemoryManager: 454435062 bytes of memory are used for execution and 556301 bytes of memory are used for storage
+25/06/15 18:10:36 INFO TaskMemoryManager: Memory used in task 18
+25/06/15 18:10:36 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@7620d51: 54.2 MiB
+25/06/15 18:10:36 INFO TaskMemoryManager: 0 bytes of memory were used by task 18 but are not associated with specific consumers
+25/06/15 18:10:36 INFO TaskMemoryManager: 454680401 bytes of memory are used for execution and 556301 bytes of memory are used for storage
+25/06/15 18:10:36 INFO TaskMemoryManager: Memory used in task 19
+25/06/15 18:10:36 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@2c5f59f7: 54.2 MiB
+25/06/15 18:10:36 INFO TaskMemoryManager: 0 bytes of memory were used by task 19 but are not associated with specific consumers
+25/06/15 18:10:36 INFO TaskMemoryManager: 454925740 bytes of memory are used for execution and 556301 bytes of memory are used for storage
+25/06/15 18:10:36 INFO UnsafeExternalSorter: Thread 72 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:36 INFO UnsafeExternalSorter: Thread 74 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:36 INFO UnsafeExternalSorter: Thread 76 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:37 INFO UnsafeExternalSorter: Thread 77 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:10:37 INFO UnsafeExternalSorter: Thread 70 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:10:37 INFO UnsafeExternalSorter: Thread 76 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:10:37 INFO UnsafeExternalSorter: Thread 71 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:10:37 INFO UnsafeExternalSorter: Thread 73 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:10:38 INFO UnsafeExternalSorter: Thread 74 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:10:38 INFO UnsafeExternalSorter: Thread 72 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:10:38 INFO UnsafeExternalSorter: Thread 75 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:10:39 INFO Executor: Finished task 7.0 in stage 3.0 (TID 23). 524320 bytes result sent to driver
+25/06/15 18:10:39 INFO TaskSetManager: Starting task 8.0 in stage 3.0 (TID 24) (10.0.2.15, executor driver, partition 8, NODE_LOCAL, 8999 bytes) 
+25/06/15 18:10:39 INFO Executor: Running task 8.0 in stage 3.0 (TID 24)
+25/06/15 18:10:39 INFO ShuffleBlockFetcherIterator: Getting 8 (2035.2 KiB) non-empty blocks including 8 (2035.2 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 2 ms
+25/06/15 18:10:39 INFO TaskSetManager: Finished task 7.0 in stage 3.0 (TID 23) in 6162 ms on 10.0.2.15 (executor driver) (1/9)
+25/06/15 18:10:39 INFO Executor: Finished task 4.0 in stage 3.0 (TID 20). 524432 bytes result sent to driver
+25/06/15 18:10:40 INFO Executor: Finished task 1.0 in stage 3.0 (TID 17). 524400 bytes result sent to driver
+25/06/15 18:10:40 INFO TaskSetManager: Finished task 4.0 in stage 3.0 (TID 20) in 6353 ms on 10.0.2.15 (executor driver) (2/9)
+25/06/15 18:10:40 INFO TaskSetManager: Finished task 1.0 in stage 3.0 (TID 17) in 6396 ms on 10.0.2.15 (executor driver) (3/9)
+25/06/15 18:10:40 INFO Executor: Finished task 3.0 in stage 3.0 (TID 19). 524336 bytes result sent to driver
+25/06/15 18:10:40 INFO TaskSetManager: Finished task 3.0 in stage 3.0 (TID 19) in 6445 ms on 10.0.2.15 (executor driver) (4/9)
+25/06/15 18:10:40 INFO Executor: Finished task 8.0 in stage 3.0 (TID 24). 523847 bytes result sent to driver
+25/06/15 18:10:40 INFO TaskSetManager: Finished task 8.0 in stage 3.0 (TID 24) in 592 ms on 10.0.2.15 (executor driver) (5/9)
+25/06/15 18:10:40 INFO Executor: Finished task 6.0 in stage 3.0 (TID 22). 524520 bytes result sent to driver
+25/06/15 18:10:40 INFO TaskSetManager: Finished task 6.0 in stage 3.0 (TID 22) in 6851 ms on 10.0.2.15 (executor driver) (6/9)
+25/06/15 18:10:40 INFO Executor: Finished task 0.0 in stage 3.0 (TID 16). 525002 bytes result sent to driver
+25/06/15 18:10:40 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 16) in 6877 ms on 10.0.2.15 (executor driver) (7/9)
+25/06/15 18:10:40 INFO Executor: Finished task 2.0 in stage 3.0 (TID 18). 524160 bytes result sent to driver
+25/06/15 18:10:40 INFO TaskSetManager: Finished task 2.0 in stage 3.0 (TID 18) in 6977 ms on 10.0.2.15 (executor driver) (8/9)
+25/06/15 18:10:40 INFO Executor: Finished task 5.0 in stage 3.0 (TID 21). 524280 bytes result sent to driver
+25/06/15 18:10:40 INFO TaskSetManager: Finished task 5.0 in stage 3.0 (TID 21) in 7093 ms on 10.0.2.15 (executor driver) (9/9)
+25/06/15 18:10:40 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+25/06/15 18:10:40 INFO DAGScheduler: ResultStage 3 (showString at NativeMethodAccessorImpl.java:0) finished in 7,167 s
+25/06/15 18:10:40 INFO DAGScheduler: Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+25/06/15 18:10:40 INFO TaskSchedulerImpl: Killing all running tasks in stage 3: Stage finished
+25/06/15 18:10:40 INFO DAGScheduler: Job 2 finished: showString at NativeMethodAccessorImpl.java:0, took 7,373537 s
+25/06/15 18:10:41 INFO DAGScheduler: Registering RDD 13 (showString at NativeMethodAccessorImpl.java:0) as input to shuffle 2
+25/06/15 18:10:41 INFO DAGScheduler: Got map stage job 3 (showString at NativeMethodAccessorImpl.java:0) with 9 output partitions
+25/06/15 18:10:41 INFO DAGScheduler: Final stage: ShuffleMapStage 5 (showString at NativeMethodAccessorImpl.java:0)
+25/06/15 18:10:41 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 4)
+25/06/15 18:10:41 INFO DAGScheduler: Missing parents: List()
+25/06/15 18:10:41 INFO DAGScheduler: Submitting ShuffleMapStage 5 (MapPartitionsRDD[13] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+25/06/15 18:10:41 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 67.2 KiB, free 433.8 MiB)
+25/06/15 18:10:41 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 29.1 KiB, free 433.8 MiB)
+25/06/15 18:10:41 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 10.0.2.15:39805 (size: 29.1 KiB, free: 434.3 MiB)
+25/06/15 18:10:41 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1585
+25/06/15 18:10:41 INFO DAGScheduler: Submitting 9 missing tasks from ShuffleMapStage 5 (MapPartitionsRDD[13] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8))
+25/06/15 18:10:41 INFO TaskSchedulerImpl: Adding task set 5.0 with 9 tasks resource profile 0
+25/06/15 18:10:41 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 25) (10.0.2.15, executor driver, partition 0, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:10:41 INFO TaskSetManager: Starting task 1.0 in stage 5.0 (TID 26) (10.0.2.15, executor driver, partition 1, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:10:41 INFO TaskSetManager: Starting task 2.0 in stage 5.0 (TID 27) (10.0.2.15, executor driver, partition 2, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:10:41 INFO TaskSetManager: Starting task 3.0 in stage 5.0 (TID 28) (10.0.2.15, executor driver, partition 3, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:10:41 INFO TaskSetManager: Starting task 4.0 in stage 5.0 (TID 29) (10.0.2.15, executor driver, partition 4, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:10:41 INFO TaskSetManager: Starting task 5.0 in stage 5.0 (TID 30) (10.0.2.15, executor driver, partition 5, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:10:41 INFO TaskSetManager: Starting task 6.0 in stage 5.0 (TID 31) (10.0.2.15, executor driver, partition 6, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:10:41 INFO TaskSetManager: Starting task 7.0 in stage 5.0 (TID 32) (10.0.2.15, executor driver, partition 7, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:10:41 INFO Executor: Running task 3.0 in stage 5.0 (TID 28)
+25/06/15 18:10:41 INFO Executor: Running task 4.0 in stage 5.0 (TID 29)
+25/06/15 18:10:41 INFO Executor: Running task 0.0 in stage 5.0 (TID 25)
+25/06/15 18:10:41 INFO Executor: Running task 2.0 in stage 5.0 (TID 27)
+25/06/15 18:10:41 INFO Executor: Running task 6.0 in stage 5.0 (TID 31)
+25/06/15 18:10:41 INFO Executor: Running task 1.0 in stage 5.0 (TID 26)
+25/06/15 18:10:41 INFO Executor: Running task 7.0 in stage 5.0 (TID 32)
+25/06/15 18:10:41 INFO Executor: Running task 5.0 in stage 5.0 (TID 30)
+25/06/15 18:10:41 INFO CodeGenerator: Code generated in 57.142507 ms
+25/06/15 18:10:41 INFO ShuffleBlockFetcherIterator: Getting 8 (15.7 MiB) non-empty blocks including 8 (15.7 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 7 ms
+25/06/15 18:10:41 INFO ShuffleBlockFetcherIterator: Getting 8 (16.3 MiB) non-empty blocks including 8 (16.3 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 11 ms
+25/06/15 18:10:41 INFO ShuffleBlockFetcherIterator: Getting 8 (16.3 MiB) non-empty blocks including 8 (16.3 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 26 ms
+25/06/15 18:10:41 INFO ShuffleBlockFetcherIterator: Getting 8 (15.7 MiB) non-empty blocks including 8 (15.7 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 5 ms
+25/06/15 18:10:41 INFO ShuffleBlockFetcherIterator: Getting 8 (16.3 MiB) non-empty blocks including 8 (16.3 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+25/06/15 18:10:41 INFO ShuffleBlockFetcherIterator: Getting 8 (16.3 MiB) non-empty blocks including 8 (16.3 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 28 ms
+25/06/15 18:10:41 INFO ShuffleBlockFetcherIterator: Getting 8 (16.2 MiB) non-empty blocks including 8 (16.2 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 18 ms
+25/06/15 18:10:41 INFO ShuffleBlockFetcherIterator: Getting 8 (15.7 MiB) non-empty blocks including 8 (15.7 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 20 ms
+25/06/15 18:10:42 INFO TaskMemoryManager: Memory used in task 29
+25/06/15 18:10:42 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@2e76199f: 54.2 MiB
+25/06/15 18:10:42 INFO TaskMemoryManager: 0 bytes of memory were used by task 29 but are not associated with specific consumers
+25/06/15 18:10:42 INFO TaskMemoryManager: 379815558 bytes of memory are used for execution and 654902 bytes of memory are used for storage
+25/06/15 18:10:42 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 10.0.2.15:39805 in memory (size: 23.7 KiB, free: 434.3 MiB)
+25/06/15 18:10:42 INFO UnsafeExternalSorter: Thread 71 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:42 INFO TaskMemoryManager: Memory used in task 26
+25/06/15 18:10:42 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@20c5aa6: 54.2 MiB
+25/06/15 18:10:42 INFO TaskMemoryManager: 0 bytes of memory were used by task 26 but are not associated with specific consumers
+25/06/15 18:10:42 INFO TaskMemoryManager: 405224013 bytes of memory are used for execution and 577195 bytes of memory are used for storage
+25/06/15 18:10:42 INFO UnsafeExternalSorter: Thread 74 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:42 INFO TaskMemoryManager: Memory used in task 30
+25/06/15 18:10:42 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@4ceaf6ee: 54.2 MiB
+25/06/15 18:10:42 INFO TaskMemoryManager: 0 bytes of memory were used by task 30 but are not associated with specific consumers
+25/06/15 18:10:42 INFO TaskMemoryManager: 411758084 bytes of memory are used for execution and 577195 bytes of memory are used for storage
+25/06/15 18:10:42 INFO TaskMemoryManager: Memory used in task 32
+25/06/15 18:10:42 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@239b9f63: 54.2 MiB
+25/06/15 18:10:42 INFO TaskMemoryManager: 0 bytes of memory were used by task 32 but are not associated with specific consumers
+25/06/15 18:10:42 INFO TaskMemoryManager: 416437810 bytes of memory are used for execution and 577195 bytes of memory are used for storage
+25/06/15 18:10:42 INFO TaskMemoryManager: Memory used in task 27
+25/06/15 18:10:42 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@4a61560: 54.2 MiB
+25/06/15 18:10:42 INFO TaskMemoryManager: 0 bytes of memory were used by task 27 but are not associated with specific consumers
+25/06/15 18:10:42 INFO TaskMemoryManager: 416437810 bytes of memory are used for execution and 577195 bytes of memory are used for storage
+25/06/15 18:10:42 INFO UnsafeExternalSorter: Thread 76 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:43 INFO TaskMemoryManager: Memory used in task 31
+25/06/15 18:10:43 INFO UnsafeExternalSorter: Thread 73 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:43 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@62be2810: 54.2 MiB
+25/06/15 18:10:43 INFO TaskMemoryManager: 0 bytes of memory were used by task 31 but are not associated with specific consumers
+25/06/15 18:10:43 INFO TaskMemoryManager: 425069081 bytes of memory are used for execution and 577195 bytes of memory are used for storage
+25/06/15 18:10:43 INFO UnsafeExternalSorter: Thread 70 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:43 INFO UnsafeExternalSorter: Thread 77 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:43 INFO TaskMemoryManager: Memory used in task 25
+25/06/15 18:10:43 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@304f85bc: 54.2 MiB
+25/06/15 18:10:43 INFO TaskMemoryManager: 0 bytes of memory were used by task 25 but are not associated with specific consumers
+25/06/15 18:10:43 INFO TaskMemoryManager: 450477504 bytes of memory are used for execution and 577195 bytes of memory are used for storage
+25/06/15 18:10:43 INFO UnsafeExternalSorter: Thread 75 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:43 INFO TaskMemoryManager: Memory used in task 28
+25/06/15 18:10:43 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@1448e8ea: 54.2 MiB
+25/06/15 18:10:43 INFO TaskMemoryManager: 0 bytes of memory were used by task 28 but are not associated with specific consumers
+25/06/15 18:10:43 INFO TaskMemoryManager: 454914503 bytes of memory are used for execution and 577195 bytes of memory are used for storage
+25/06/15 18:10:43 INFO UnsafeExternalSorter: Thread 72 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:10:44 INFO UnsafeExternalSorter: Thread 71 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:10:44 INFO UnsafeExternalSorter: Thread 73 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:10:44 INFO UnsafeExternalSorter: Thread 70 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:10:44 INFO UnsafeExternalSorter: Thread 75 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:10:45 INFO UnsafeExternalSorter: Thread 74 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:10:45 INFO UnsafeExternalSorter: Thread 72 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:10:45 INFO UnsafeExternalSorter: Thread 76 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:10:45 INFO UnsafeExternalSorter: Thread 77 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:10:48 INFO Executor: Finished task 4.0 in stage 5.0 (TID 29). 5798 bytes result sent to driver
+25/06/15 18:10:48 INFO TaskSetManager: Starting task 8.0 in stage 5.0 (TID 33) (10.0.2.15, executor driver, partition 8, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:10:48 INFO TaskSetManager: Finished task 4.0 in stage 5.0 (TID 29) in 7368 ms on 10.0.2.15 (executor driver) (1/9)
+25/06/15 18:10:48 INFO Executor: Running task 8.0 in stage 5.0 (TID 33)
+25/06/15 18:10:48 INFO ShuffleBlockFetcherIterator: Getting 8 (2035.2 KiB) non-empty blocks including 8 (2035.2 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+25/06/15 18:10:48 INFO Executor: Finished task 6.0 in stage 5.0 (TID 31). 5755 bytes result sent to driver
+25/06/15 18:10:48 INFO TaskSetManager: Finished task 6.0 in stage 5.0 (TID 31) in 7535 ms on 10.0.2.15 (executor driver) (2/9)
+25/06/15 18:10:49 INFO Executor: Finished task 0.0 in stage 5.0 (TID 25). 5755 bytes result sent to driver
+25/06/15 18:10:49 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 25) in 7640 ms on 10.0.2.15 (executor driver) (3/9)
+25/06/15 18:10:49 INFO Executor: Finished task 7.0 in stage 5.0 (TID 32). 5755 bytes result sent to driver
+25/06/15 18:10:49 INFO TaskSetManager: Finished task 7.0 in stage 5.0 (TID 32) in 7736 ms on 10.0.2.15 (executor driver) (4/9)
+25/06/15 18:10:49 INFO Executor: Finished task 2.0 in stage 5.0 (TID 27). 5755 bytes result sent to driver
+25/06/15 18:10:49 INFO Executor: Finished task 1.0 in stage 5.0 (TID 26). 5755 bytes result sent to driver
+25/06/15 18:10:49 INFO TaskSetManager: Finished task 2.0 in stage 5.0 (TID 27) in 7816 ms on 10.0.2.15 (executor driver) (5/9)
+25/06/15 18:10:49 INFO TaskSetManager: Finished task 1.0 in stage 5.0 (TID 26) in 7819 ms on 10.0.2.15 (executor driver) (6/9)
+25/06/15 18:10:49 INFO Executor: Finished task 5.0 in stage 5.0 (TID 30). 5755 bytes result sent to driver
+25/06/15 18:10:49 INFO TaskSetManager: Finished task 5.0 in stage 5.0 (TID 30) in 7963 ms on 10.0.2.15 (executor driver) (7/9)
+25/06/15 18:10:49 INFO Executor: Finished task 3.0 in stage 5.0 (TID 28). 5755 bytes result sent to driver
+25/06/15 18:10:49 INFO TaskSetManager: Finished task 3.0 in stage 5.0 (TID 28) in 8047 ms on 10.0.2.15 (executor driver) (8/9)
+25/06/15 18:10:49 INFO Executor: Finished task 8.0 in stage 5.0 (TID 33). 5626 bytes result sent to driver
+25/06/15 18:10:49 INFO TaskSetManager: Finished task 8.0 in stage 5.0 (TID 33) in 710 ms on 10.0.2.15 (executor driver) (9/9)
+25/06/15 18:10:49 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+25/06/15 18:10:49 INFO DAGScheduler: ShuffleMapStage 5 (showString at NativeMethodAccessorImpl.java:0) finished in 8,171 s
+25/06/15 18:10:49 INFO DAGScheduler: looking for newly runnable stages
+25/06/15 18:10:49 INFO DAGScheduler: running: Set()
+25/06/15 18:10:49 INFO DAGScheduler: waiting: Set()
+25/06/15 18:10:49 INFO DAGScheduler: failed: Set()
+25/06/15 18:10:49 INFO ShufflePartitionsUtil: For shuffle(2), advisory target size: 67108864, actual target size 11538915, minimum partition size: 1048576
+25/06/15 18:10:49 INFO CodeGenerator: Code generated in 13.918386 ms
+25/06/15 18:10:49 INFO DAGScheduler: Registering RDD 17 (showString at NativeMethodAccessorImpl.java:0) as input to shuffle 3
+25/06/15 18:10:49 INFO DAGScheduler: Got map stage job 4 (showString at NativeMethodAccessorImpl.java:0) with 9 output partitions
+25/06/15 18:10:49 INFO DAGScheduler: Final stage: ShuffleMapStage 8 (showString at NativeMethodAccessorImpl.java:0)
+25/06/15 18:10:49 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 7)
+25/06/15 18:10:49 INFO DAGScheduler: Missing parents: List()
+25/06/15 18:10:49 INFO DAGScheduler: Submitting ShuffleMapStage 8 (MapPartitionsRDD[17] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+25/06/15 18:10:49 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 52.8 KiB, free 433.8 MiB)
+25/06/15 18:10:49 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 24.1 KiB, free 433.8 MiB)
+25/06/15 18:10:49 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 10.0.2.15:39805 (size: 24.1 KiB, free: 434.3 MiB)
+25/06/15 18:10:49 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1585
+25/06/15 18:10:49 INFO DAGScheduler: Submitting 9 missing tasks from ShuffleMapStage 8 (MapPartitionsRDD[17] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8))
+25/06/15 18:10:49 INFO TaskSchedulerImpl: Adding task set 8.0 with 9 tasks resource profile 0
+25/06/15 18:10:49 INFO TaskSetManager: Starting task 0.0 in stage 8.0 (TID 34) (10.0.2.15, executor driver, partition 0, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:10:49 INFO TaskSetManager: Starting task 1.0 in stage 8.0 (TID 35) (10.0.2.15, executor driver, partition 1, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:10:49 INFO TaskSetManager: Starting task 2.0 in stage 8.0 (TID 36) (10.0.2.15, executor driver, partition 2, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:10:49 INFO TaskSetManager: Starting task 3.0 in stage 8.0 (TID 37) (10.0.2.15, executor driver, partition 3, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:10:49 INFO TaskSetManager: Starting task 4.0 in stage 8.0 (TID 38) (10.0.2.15, executor driver, partition 4, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:10:49 INFO TaskSetManager: Starting task 5.0 in stage 8.0 (TID 39) (10.0.2.15, executor driver, partition 5, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:10:49 INFO TaskSetManager: Starting task 6.0 in stage 8.0 (TID 40) (10.0.2.15, executor driver, partition 6, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:10:49 INFO TaskSetManager: Starting task 7.0 in stage 8.0 (TID 41) (10.0.2.15, executor driver, partition 7, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:10:49 INFO Executor: Running task 0.0 in stage 8.0 (TID 34)
+25/06/15 18:10:49 INFO Executor: Running task 1.0 in stage 8.0 (TID 35)
+25/06/15 18:10:49 INFO Executor: Running task 2.0 in stage 8.0 (TID 36)
+25/06/15 18:10:49 INFO Executor: Running task 6.0 in stage 8.0 (TID 40)
+25/06/15 18:10:49 INFO Executor: Running task 4.0 in stage 8.0 (TID 38)
+25/06/15 18:10:49 INFO Executor: Running task 7.0 in stage 8.0 (TID 41)
+25/06/15 18:10:49 INFO Executor: Running task 3.0 in stage 8.0 (TID 37)
+25/06/15 18:10:49 INFO Executor: Running task 5.0 in stage 8.0 (TID 39)
+25/06/15 18:10:49 INFO ShuffleBlockFetcherIterator: Getting 9 (10.6 MiB) non-empty blocks including 9 (10.6 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:49 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 26 ms
+25/06/15 18:10:49 INFO ShuffleBlockFetcherIterator: Getting 9 (10.9 MiB) non-empty blocks including 9 (10.9 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:49 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 5 ms
+25/06/15 18:10:49 INFO ShuffleBlockFetcherIterator: Getting 9 (10.7 MiB) non-empty blocks including 9 (10.7 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:49 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 6 ms
+25/06/15 18:10:49 INFO ShuffleBlockFetcherIterator: Getting 9 (10.6 MiB) non-empty blocks including 9 (10.6 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:49 INFO ShuffleBlockFetcherIterator: Getting 9 (10.9 MiB) non-empty blocks including 9 (10.9 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:49 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 10 ms
+25/06/15 18:10:49 INFO ShuffleBlockFetcherIterator: Getting 9 (10.9 MiB) non-empty blocks including 9 (10.9 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:49 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 6 ms
+25/06/15 18:10:49 INFO ShuffleBlockFetcherIterator: Getting 9 (10.8 MiB) non-empty blocks including 9 (10.8 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:49 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 4 ms
+25/06/15 18:10:49 INFO ShuffleBlockFetcherIterator: Getting 9 (10.9 MiB) non-empty blocks including 9 (10.9 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:49 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 9 ms
+25/06/15 18:10:49 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 6 ms
+25/06/15 18:10:49 INFO CodeGenerator: Code generated in 67.052441 ms
+25/06/15 18:10:50 INFO CodeGenerator: Code generated in 40.00507 ms
+25/06/15 18:10:50 INFO CodeGenerator: Code generated in 11.672849 ms
+25/06/15 18:10:50 INFO UnsafeExternalSorter: Thread 75 spilling sort data of 54.0 MiB to disk (0  time so far)
+25/06/15 18:10:50 INFO UnsafeExternalSorter: Thread 77 spilling sort data of 54.0 MiB to disk (0  time so far)
+25/06/15 18:10:50 INFO UnsafeExternalSorter: Thread 76 spilling sort data of 54.0 MiB to disk (0  time so far)
+25/06/15 18:10:50 INFO UnsafeExternalSorter: Thread 71 spilling sort data of 54.0 MiB to disk (0  time so far)
+25/06/15 18:10:50 INFO UnsafeExternalSorter: Thread 74 spilling sort data of 54.0 MiB to disk (0  time so far)
+25/06/15 18:10:50 INFO UnsafeExternalSorter: Thread 72 spilling sort data of 54.0 MiB to disk (0  time so far)
+25/06/15 18:10:50 INFO UnsafeExternalSorter: Thread 73 spilling sort data of 54.0 MiB to disk (0  time so far)
+25/06/15 18:10:51 INFO BlockManagerInfo: Removed broadcast_5_piece0 on 10.0.2.15:39805 in memory (size: 29.1 KiB, free: 434.3 MiB)
+25/06/15 18:10:51 INFO UnsafeExternalSorter: Thread 70 spilling sort data of 54.0 MiB to disk (0  time so far)
+25/06/15 18:10:54 INFO Executor: Finished task 1.0 in stage 8.0 (TID 35). 7323 bytes result sent to driver
+25/06/15 18:10:54 INFO TaskSetManager: Starting task 8.0 in stage 8.0 (TID 42) (10.0.2.15, executor driver, partition 8, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:10:54 INFO TaskSetManager: Finished task 1.0 in stage 8.0 (TID 35) in 4546 ms on 10.0.2.15 (executor driver) (1/9)
+25/06/15 18:10:54 INFO Executor: Running task 8.0 in stage 8.0 (TID 42)
+25/06/15 18:10:54 INFO ShuffleBlockFetcherIterator: Getting 9 (1782.1 KiB) non-empty blocks including 9 (1782.1 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:54 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+25/06/15 18:10:54 INFO Executor: Finished task 6.0 in stage 8.0 (TID 40). 7280 bytes result sent to driver
+25/06/15 18:10:54 INFO TaskSetManager: Finished task 6.0 in stage 8.0 (TID 40) in 4795 ms on 10.0.2.15 (executor driver) (2/9)
+25/06/15 18:10:54 INFO Executor: Finished task 0.0 in stage 8.0 (TID 34). 7280 bytes result sent to driver
+25/06/15 18:10:54 INFO TaskSetManager: Finished task 0.0 in stage 8.0 (TID 34) in 5092 ms on 10.0.2.15 (executor driver) (3/9)
+25/06/15 18:10:54 INFO Executor: Finished task 2.0 in stage 8.0 (TID 36). 7323 bytes result sent to driver
+25/06/15 18:10:54 INFO TaskSetManager: Finished task 2.0 in stage 8.0 (TID 36) in 5219 ms on 10.0.2.15 (executor driver) (4/9)
+25/06/15 18:10:55 INFO Executor: Finished task 5.0 in stage 8.0 (TID 39). 7280 bytes result sent to driver
+25/06/15 18:10:55 INFO TaskSetManager: Finished task 5.0 in stage 8.0 (TID 39) in 5297 ms on 10.0.2.15 (executor driver) (5/9)
+25/06/15 18:10:55 INFO Executor: Finished task 4.0 in stage 8.0 (TID 38). 7280 bytes result sent to driver
+25/06/15 18:10:55 INFO TaskSetManager: Finished task 4.0 in stage 8.0 (TID 38) in 5344 ms on 10.0.2.15 (executor driver) (6/9)
+25/06/15 18:10:55 INFO Executor: Finished task 7.0 in stage 8.0 (TID 41). 7280 bytes result sent to driver
+25/06/15 18:10:55 INFO TaskSetManager: Finished task 7.0 in stage 8.0 (TID 41) in 5350 ms on 10.0.2.15 (executor driver) (7/9)
+25/06/15 18:10:55 INFO Executor: Finished task 3.0 in stage 8.0 (TID 37). 7280 bytes result sent to driver
+25/06/15 18:10:55 INFO TaskSetManager: Finished task 3.0 in stage 8.0 (TID 37) in 5533 ms on 10.0.2.15 (executor driver) (8/9)
+25/06/15 18:10:55 INFO Executor: Finished task 8.0 in stage 8.0 (TID 42). 7151 bytes result sent to driver
+25/06/15 18:10:55 INFO TaskSetManager: Finished task 8.0 in stage 8.0 (TID 42) in 1024 ms on 10.0.2.15 (executor driver) (9/9)
+25/06/15 18:10:55 INFO TaskSchedulerImpl: Removed TaskSet 8.0, whose tasks have all completed, from pool 
+25/06/15 18:10:55 INFO DAGScheduler: ShuffleMapStage 8 (showString at NativeMethodAccessorImpl.java:0) finished in 5,620 s
+25/06/15 18:10:55 INFO DAGScheduler: looking for newly runnable stages
+25/06/15 18:10:55 INFO DAGScheduler: running: Set()
+25/06/15 18:10:55 INFO DAGScheduler: waiting: Set()
+25/06/15 18:10:55 INFO DAGScheduler: failed: Set()
+25/06/15 18:10:55 INFO ShufflePartitionsUtil: For shuffle(3), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+25/06/15 18:10:55 INFO CodeGenerator: Code generated in 9.547076 ms
+25/06/15 18:10:55 INFO CodeGenerator: Code generated in 11.523632 ms
+25/06/15 18:10:55 INFO SparkContext: Starting job: $anonfun$withThreadLocalCaptured$1 at FutureTask.java:264
+25/06/15 18:10:55 INFO DAGScheduler: Got job 5 ($anonfun$withThreadLocalCaptured$1 at FutureTask.java:264) with 1 output partitions
+25/06/15 18:10:55 INFO DAGScheduler: Final stage: ResultStage 12 ($anonfun$withThreadLocalCaptured$1 at FutureTask.java:264)
+25/06/15 18:10:55 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 11)
+25/06/15 18:10:55 INFO DAGScheduler: Missing parents: List()
+25/06/15 18:10:55 INFO DAGScheduler: Submitting ResultStage 12 (MapPartitionsRDD[25] at $anonfun$withThreadLocalCaptured$1 at FutureTask.java:264), which has no missing parents
+25/06/15 18:10:55 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 65.7 KiB, free 433.8 MiB)
+25/06/15 18:10:55 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 28.9 KiB, free 433.8 MiB)
+25/06/15 18:10:55 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 10.0.2.15:39805 (size: 28.9 KiB, free: 434.3 MiB)
+25/06/15 18:10:55 INFO SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:1585
+25/06/15 18:10:55 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 12 (MapPartitionsRDD[25] at $anonfun$withThreadLocalCaptured$1 at FutureTask.java:264) (first 15 tasks are for partitions Vector(0))
+25/06/15 18:10:55 INFO TaskSchedulerImpl: Adding task set 12.0 with 1 tasks resource profile 0
+25/06/15 18:10:55 INFO TaskSetManager: Starting task 0.0 in stage 12.0 (TID 43) (10.0.2.15, executor driver, partition 0, NODE_LOCAL, 8999 bytes) 
+25/06/15 18:10:55 INFO Executor: Running task 0.0 in stage 12.0 (TID 43)
+25/06/15 18:10:55 INFO ShuffleBlockFetcherIterator: Getting 9 (858.3 KiB) non-empty blocks including 9 (858.3 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:55 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+25/06/15 18:10:55 INFO CodeGenerator: Code generated in 18.7441 ms
+25/06/15 18:10:55 INFO CodeGenerator: Code generated in 12.371614 ms
+25/06/15 18:10:55 INFO CodeGenerator: Code generated in 33.638007 ms
+25/06/15 18:10:55 INFO CodeGenerator: Code generated in 7.109317 ms
+25/06/15 18:10:55 INFO CodeGenerator: Code generated in 7.155919 ms
+25/06/15 18:10:55 INFO CodeGenerator: Code generated in 17.436301 ms
+25/06/15 18:10:56 INFO CodeGenerator: Code generated in 29.035973 ms
+25/06/15 18:10:56 INFO CodeGenerator: Code generated in 34.178289 ms
+25/06/15 18:10:56 INFO ObjectAggregationIterator: Aggregation hash map size 128 reaches threshold capacity (128 entries), spilling and falling back to sort based aggregation. You may change the threshold by adjust option spark.sql.objectHashAggregate.sortBased.fallbackThreshold
+25/06/15 18:10:56 INFO CodeGenerator: Code generated in 8.472639 ms
+25/06/15 18:10:56 INFO CodeGenerator: Code generated in 8.885067 ms
+25/06/15 18:10:56 INFO CodeGenerator: Code generated in 12.822715 ms
+25/06/15 18:10:56 INFO CodeGenerator: Code generated in 9.561563 ms
+25/06/15 18:10:56 INFO ObjectAggregationIterator: Aggregation hash map size 128 reaches threshold capacity (128 entries), spilling and falling back to sort based aggregation. You may change the threshold by adjust option spark.sql.objectHashAggregate.sortBased.fallbackThreshold
+25/06/15 18:10:56 INFO Executor: Finished task 0.0 in stage 12.0 (TID 43). 261435 bytes result sent to driver
+25/06/15 18:10:56 INFO TaskSetManager: Finished task 0.0 in stage 12.0 (TID 43) in 1244 ms on 10.0.2.15 (executor driver) (1/1)
+25/06/15 18:10:56 INFO TaskSchedulerImpl: Removed TaskSet 12.0, whose tasks have all completed, from pool 
+25/06/15 18:10:56 INFO DAGScheduler: ResultStage 12 ($anonfun$withThreadLocalCaptured$1 at FutureTask.java:264) finished in 1,258 s
+25/06/15 18:10:56 INFO DAGScheduler: Job 5 is finished. Cancelling potential speculative or zombie tasks for this job
+25/06/15 18:10:56 INFO TaskSchedulerImpl: Killing all running tasks in stage 12: Stage finished
+25/06/15 18:10:56 INFO DAGScheduler: Job 5 finished: $anonfun$withThreadLocalCaptured$1 at FutureTask.java:264, took 1,293807 s
+25/06/15 18:10:56 INFO CodeGenerator: Code generated in 30.623896 ms
+25/06/15 18:10:56 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 2.3 MiB, free 431.5 MiB)
+25/06/15 18:10:56 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 421.2 KiB, free 431.1 MiB)
+25/06/15 18:10:56 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 10.0.2.15:39805 (size: 421.2 KiB, free: 433.9 MiB)
+25/06/15 18:10:56 INFO SparkContext: Created broadcast 8 from $anonfun$withThreadLocalCaptured$1 at FutureTask.java:264
+25/06/15 18:10:57 INFO ShufflePartitionsUtil: For shuffle(0), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+25/06/15 18:10:57 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+25/06/15 18:10:57 INFO CodeGenerator: Code generated in 30.212996 ms
+25/06/15 18:10:57 INFO SparkContext: Starting job: showString at NativeMethodAccessorImpl.java:0
+25/06/15 18:10:57 INFO DAGScheduler: Got job 6 (showString at NativeMethodAccessorImpl.java:0) with 1 output partitions
+25/06/15 18:10:57 INFO DAGScheduler: Final stage: ResultStage 14 (showString at NativeMethodAccessorImpl.java:0)
+25/06/15 18:10:57 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 13)
+25/06/15 18:10:57 INFO DAGScheduler: Missing parents: List()
+25/06/15 18:10:57 INFO DAGScheduler: Submitting ResultStage 14 (MapPartitionsRDD[28] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+25/06/15 18:10:57 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 93.8 KiB, free 431.0 MiB)
+25/06/15 18:10:57 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 38.8 KiB, free 431.0 MiB)
+25/06/15 18:10:57 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 10.0.2.15:39805 (size: 38.8 KiB, free: 433.8 MiB)
+25/06/15 18:10:57 INFO SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:1585
+25/06/15 18:10:57 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 14 (MapPartitionsRDD[28] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+25/06/15 18:10:57 INFO TaskSchedulerImpl: Adding task set 14.0 with 1 tasks resource profile 0
+25/06/15 18:10:57 INFO TaskSetManager: Starting task 0.0 in stage 14.0 (TID 44) (10.0.2.15, executor driver, partition 0, NODE_LOCAL, 8999 bytes) 
+25/06/15 18:10:57 INFO Executor: Running task 0.0 in stage 14.0 (TID 44)
+25/06/15 18:10:57 INFO ShuffleBlockFetcherIterator: Getting 8 (584.9 KiB) non-empty blocks including 8 (584.9 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:10:57 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 27 ms
+25/06/15 18:10:57 INFO CodeGenerator: Code generated in 185.591818 ms
+25/06/15 18:10:57 INFO Executor: Finished task 0.0 in stage 14.0 (TID 44). 12390 bytes result sent to driver
+25/06/15 18:10:57 INFO TaskSetManager: Finished task 0.0 in stage 14.0 (TID 44) in 559 ms on 10.0.2.15 (executor driver) (1/1)
+25/06/15 18:10:57 INFO TaskSchedulerImpl: Removed TaskSet 14.0, whose tasks have all completed, from pool 
+25/06/15 18:10:57 INFO DAGScheduler: ResultStage 14 (showString at NativeMethodAccessorImpl.java:0) finished in 0,711 s
+25/06/15 18:10:57 INFO DAGScheduler: Job 6 is finished. Cancelling potential speculative or zombie tasks for this job
+25/06/15 18:10:57 INFO TaskSchedulerImpl: Killing all running tasks in stage 14: Stage finished
+25/06/15 18:10:57 INFO DAGScheduler: Job 6 finished: showString at NativeMethodAccessorImpl.java:0, took 0,737547 s
+25/06/15 18:10:59 INFO CodeGenerator: Code generated in 7.874949 ms
++--------------+----+----------+--------+----------------+-------------------------+
+|city          |year|price_band|num_cars|avg_daysonmarket|top_3_words              |
++--------------+----+----------+--------+----------------+-------------------------+
+|New Hudson    |2018|low       |27      |34.56           |[chevrolet, seat, front] |
+|Stamford      |2020|high      |190     |175.38          |[door, front, steering]  |
+|Norwalk       |2018|medium    |15      |17.53           |[door, front, rear]      |
+|Palisades Park|2018|medium    |2       |127.5           |[vehicle, internet, must]|
+|West Islip    |2017|medium    |37      |45.43           |[rear, front, door]      |
+|Lakewood      |2016|low       |5       |13.0            |[door, front, awards]    |
+|Dover         |2008|low       |4       |44.0            |[front, rear, type]      |
+|West Hartford |2012|low       |11      |35.18           |[front, rear, door]      |
+|Greenwich     |2019|medium    |9       |34.67           |[front, power, door]     |
+|Linden        |2015|low       |6       |33.33           |[rear, front, air]       |
++--------------+----+----------+--------+----------------+-------------------------+
+only showing top 10 rows
+
+25/06/15 18:10:59 INFO FileSourceStrategy: Pushed Filters: 
+25/06/15 18:10:59 INFO FileSourceStrategy: Post-Scan Filters: 
+25/06/15 18:10:59 INFO FileSourceStrategy: Pushed Filters: IsNotNull(city),IsNotNull(year)
+25/06/15 18:10:59 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(city#76),isnotnull(year#75)
+25/06/15 18:10:59 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 199.4 KiB, free 430.8 MiB)
+25/06/15 18:10:59 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 34.3 KiB, free 430.8 MiB)
+25/06/15 18:10:59 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 10.0.2.15:39805 (size: 34.3 KiB, free: 433.8 MiB)
+25/06/15 18:10:59 INFO SparkContext: Created broadcast 10 from showString at NativeMethodAccessorImpl.java:0
+25/06/15 18:10:59 INFO FileSourceScanExec: Planning scan with bin packing, max size: 34058944 bytes, open cost is considered as scanning 4194304 bytes.
+25/06/15 18:10:59 INFO DAGScheduler: Registering RDD 32 (showString at NativeMethodAccessorImpl.java:0) as input to shuffle 4
+25/06/15 18:10:59 INFO DAGScheduler: Got map stage job 7 (showString at NativeMethodAccessorImpl.java:0) with 8 output partitions
+25/06/15 18:10:59 INFO DAGScheduler: Final stage: ShuffleMapStage 15 (showString at NativeMethodAccessorImpl.java:0)
+25/06/15 18:10:59 INFO DAGScheduler: Parents of final stage: List()
+25/06/15 18:10:59 INFO DAGScheduler: Missing parents: List()
+25/06/15 18:10:59 INFO DAGScheduler: Submitting ShuffleMapStage 15 (MapPartitionsRDD[32] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+25/06/15 18:10:59 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 52.1 KiB, free 430.7 MiB)
+25/06/15 18:10:59 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 23.1 KiB, free 430.7 MiB)
+25/06/15 18:10:59 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 199.4 KiB, free 430.5 MiB)
+25/06/15 18:10:59 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 10.0.2.15:39805 (size: 23.1 KiB, free: 433.8 MiB)
+25/06/15 18:10:59 INFO SparkContext: Created broadcast 12 from broadcast at DAGScheduler.scala:1585
+25/06/15 18:10:59 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 34.3 KiB, free 430.5 MiB)
+25/06/15 18:10:59 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on 10.0.2.15:39805 (size: 34.3 KiB, free: 433.7 MiB)
+25/06/15 18:10:59 INFO DAGScheduler: Submitting 8 missing tasks from ShuffleMapStage 15 (MapPartitionsRDD[32] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7))
+25/06/15 18:10:59 INFO TaskSchedulerImpl: Adding task set 15.0 with 8 tasks resource profile 0
+25/06/15 18:10:59 INFO SparkContext: Created broadcast 11 from showString at NativeMethodAccessorImpl.java:0
+25/06/15 18:10:59 INFO TaskSetManager: Starting task 0.0 in stage 15.0 (TID 45) (10.0.2.15, executor driver, partition 0, ANY, 9602 bytes) 
+25/06/15 18:10:59 INFO TaskSetManager: Starting task 1.0 in stage 15.0 (TID 46) (10.0.2.15, executor driver, partition 1, ANY, 9602 bytes) 
+25/06/15 18:10:59 INFO TaskSetManager: Starting task 2.0 in stage 15.0 (TID 47) (10.0.2.15, executor driver, partition 2, ANY, 9602 bytes) 
+25/06/15 18:10:59 INFO TaskSetManager: Starting task 3.0 in stage 15.0 (TID 48) (10.0.2.15, executor driver, partition 3, ANY, 9602 bytes) 
+25/06/15 18:10:59 INFO FileSourceScanExec: Planning scan with bin packing, max size: 34058944 bytes, open cost is considered as scanning 4194304 bytes.
+25/06/15 18:10:59 INFO TaskSetManager: Starting task 4.0 in stage 15.0 (TID 49) (10.0.2.15, executor driver, partition 4, ANY, 9602 bytes) 
+25/06/15 18:10:59 INFO TaskSetManager: Starting task 5.0 in stage 15.0 (TID 50) (10.0.2.15, executor driver, partition 5, ANY, 9602 bytes) 
+25/06/15 18:10:59 INFO TaskSetManager: Starting task 6.0 in stage 15.0 (TID 51) (10.0.2.15, executor driver, partition 6, ANY, 9602 bytes) 
+25/06/15 18:10:59 INFO TaskSetManager: Starting task 7.0 in stage 15.0 (TID 52) (10.0.2.15, executor driver, partition 7, ANY, 9602 bytes) 
+25/06/15 18:10:59 INFO Executor: Running task 0.0 in stage 15.0 (TID 45)
+25/06/15 18:10:59 INFO Executor: Running task 1.0 in stage 15.0 (TID 46)
+25/06/15 18:10:59 INFO Executor: Running task 2.0 in stage 15.0 (TID 47)
+25/06/15 18:10:59 INFO Executor: Running task 4.0 in stage 15.0 (TID 49)
+25/06/15 18:10:59 INFO Executor: Running task 3.0 in stage 15.0 (TID 48)
+25/06/15 18:10:59 INFO Executor: Running task 7.0 in stage 15.0 (TID 52)
+25/06/15 18:10:59 INFO Executor: Running task 6.0 in stage 15.0 (TID 51)
+25/06/15 18:10:59 INFO DAGScheduler: Registering RDD 36 (showString at NativeMethodAccessorImpl.java:0) as input to shuffle 5
+25/06/15 18:10:59 INFO DAGScheduler: Got map stage job 8 (showString at NativeMethodAccessorImpl.java:0) with 8 output partitions
+25/06/15 18:10:59 INFO DAGScheduler: Final stage: ShuffleMapStage 16 (showString at NativeMethodAccessorImpl.java:0)
+25/06/15 18:10:59 INFO DAGScheduler: Parents of final stage: List()
+25/06/15 18:10:59 INFO Executor: Running task 5.0 in stage 15.0 (TID 50)
+25/06/15 18:10:59 INFO DAGScheduler: Missing parents: List()
+25/06/15 18:10:59 INFO DAGScheduler: Submitting ShuffleMapStage 16 (MapPartitionsRDD[36] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+25/06/15 18:10:59 INFO MemoryStore: Block broadcast_13 stored as values in memory (estimated size 52.6 KiB, free 430.4 MiB)
+25/06/15 18:10:59 INFO MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 23.1 KiB, free 430.4 MiB)
+25/06/15 18:10:59 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 10.0.2.15:39805 (size: 23.1 KiB, free: 433.7 MiB)
+25/06/15 18:10:59 INFO SparkContext: Created broadcast 13 from broadcast at DAGScheduler.scala:1585
+25/06/15 18:10:59 INFO DAGScheduler: Submitting 8 missing tasks from ShuffleMapStage 16 (MapPartitionsRDD[36] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7))
+25/06/15 18:10:59 INFO TaskSchedulerImpl: Adding task set 16.0 with 8 tasks resource profile 0
+25/06/15 18:10:59 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 0-34058944, partition values: [empty row]
+25/06/15 18:10:59 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 68117888-102176832, partition values: [empty row]
+25/06/15 18:10:59 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 34058944-68117888, partition values: [empty row]
+25/06/15 18:10:59 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 102176832-136235776, partition values: [empty row]
+25/06/15 18:10:59 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 136235776-170294720, partition values: [empty row]
+25/06/15 18:10:59 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 238412608-268277252, partition values: [empty row]
+25/06/15 18:10:59 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 204353664-238412608, partition values: [empty row]
+25/06/15 18:10:59 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 170294720-204353664, partition values: [empty row]
+25/06/15 18:10:59 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 10.0.2.15:39805 in memory (size: 28.9 KiB, free: 433.7 MiB)
+25/06/15 18:11:00 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 10.0.2.15:39805 in memory (size: 38.8 KiB, free: 433.8 MiB)
+25/06/15 18:11:02 INFO Executor: Finished task 7.0 in stage 15.0 (TID 52). 2805 bytes result sent to driver
+25/06/15 18:11:02 INFO TaskSetManager: Starting task 0.0 in stage 16.0 (TID 53) (10.0.2.15, executor driver, partition 0, ANY, 9602 bytes) 
+25/06/15 18:11:02 INFO TaskSetManager: Finished task 7.0 in stage 15.0 (TID 52) in 2713 ms on 10.0.2.15 (executor driver) (1/8)
+25/06/15 18:11:02 INFO Executor: Running task 0.0 in stage 16.0 (TID 53)
+25/06/15 18:11:02 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 0-34058944, partition values: [empty row]
+25/06/15 18:11:02 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 10.0.2.15:39805 in memory (size: 34.3 KiB, free: 433.8 MiB)
+25/06/15 18:11:02 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 10.0.2.15:39805 in memory (size: 34.3 KiB, free: 433.9 MiB)
+25/06/15 18:11:02 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 10.0.2.15:39805 in memory (size: 24.1 KiB, free: 433.9 MiB)
+25/06/15 18:11:03 INFO Executor: Finished task 3.0 in stage 15.0 (TID 48). 2805 bytes result sent to driver
+25/06/15 18:11:03 INFO TaskSetManager: Starting task 1.0 in stage 16.0 (TID 54) (10.0.2.15, executor driver, partition 1, ANY, 9602 bytes) 
+25/06/15 18:11:03 INFO TaskSetManager: Finished task 3.0 in stage 15.0 (TID 48) in 3474 ms on 10.0.2.15 (executor driver) (2/8)
+25/06/15 18:11:03 INFO Executor: Running task 1.0 in stage 16.0 (TID 54)
+25/06/15 18:11:03 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 34058944-68117888, partition values: [empty row]
+25/06/15 18:11:03 INFO Executor: Finished task 0.0 in stage 15.0 (TID 45). 2762 bytes result sent to driver
+25/06/15 18:11:03 INFO TaskSetManager: Finished task 0.0 in stage 15.0 (TID 45) in 3705 ms on 10.0.2.15 (executor driver) (3/8)
+25/06/15 18:11:03 INFO Executor: Finished task 4.0 in stage 15.0 (TID 49). 2762 bytes result sent to driver
+25/06/15 18:11:03 INFO TaskSetManager: Starting task 2.0 in stage 16.0 (TID 55) (10.0.2.15, executor driver, partition 2, ANY, 9602 bytes) 
+25/06/15 18:11:03 INFO Executor: Running task 2.0 in stage 16.0 (TID 55)
+25/06/15 18:11:03 INFO TaskSetManager: Starting task 3.0 in stage 16.0 (TID 56) (10.0.2.15, executor driver, partition 3, ANY, 9602 bytes) 
+25/06/15 18:11:03 INFO Executor: Running task 3.0 in stage 16.0 (TID 56)
+25/06/15 18:11:03 INFO TaskSetManager: Finished task 4.0 in stage 15.0 (TID 49) in 3749 ms on 10.0.2.15 (executor driver) (4/8)
+25/06/15 18:11:03 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 68117888-102176832, partition values: [empty row]
+25/06/15 18:11:03 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 102176832-136235776, partition values: [empty row]
+25/06/15 18:11:03 INFO Executor: Finished task 5.0 in stage 15.0 (TID 50). 2762 bytes result sent to driver
+25/06/15 18:11:03 INFO TaskSetManager: Starting task 4.0 in stage 16.0 (TID 57) (10.0.2.15, executor driver, partition 4, ANY, 9602 bytes) 
+25/06/15 18:11:03 INFO TaskSetManager: Finished task 5.0 in stage 15.0 (TID 50) in 4069 ms on 10.0.2.15 (executor driver) (5/8)
+25/06/15 18:11:03 INFO Executor: Running task 4.0 in stage 16.0 (TID 57)
+25/06/15 18:11:03 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 136235776-170294720, partition values: [empty row]
+25/06/15 18:11:03 INFO BlockManagerInfo: Removed broadcast_8_piece0 on 10.0.2.15:39805 in memory (size: 421.2 KiB, free: 434.3 MiB)
+25/06/15 18:11:04 INFO Executor: Finished task 1.0 in stage 15.0 (TID 46). 2762 bytes result sent to driver
+25/06/15 18:11:04 INFO TaskSetManager: Starting task 5.0 in stage 16.0 (TID 58) (10.0.2.15, executor driver, partition 5, ANY, 9602 bytes) 
+25/06/15 18:11:04 INFO Executor: Running task 5.0 in stage 16.0 (TID 58)
+25/06/15 18:11:04 INFO TaskSetManager: Finished task 1.0 in stage 15.0 (TID 46) in 4648 ms on 10.0.2.15 (executor driver) (6/8)
+25/06/15 18:11:04 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 170294720-204353664, partition values: [empty row]
+25/06/15 18:11:04 INFO Executor: Finished task 2.0 in stage 15.0 (TID 47). 2762 bytes result sent to driver
+25/06/15 18:11:04 INFO TaskSetManager: Starting task 6.0 in stage 16.0 (TID 59) (10.0.2.15, executor driver, partition 6, ANY, 9602 bytes) 
+25/06/15 18:11:04 INFO Executor: Running task 6.0 in stage 16.0 (TID 59)
+25/06/15 18:11:04 INFO TaskSetManager: Finished task 2.0 in stage 15.0 (TID 47) in 5082 ms on 10.0.2.15 (executor driver) (7/8)
+25/06/15 18:11:04 INFO Executor: Finished task 6.0 in stage 15.0 (TID 51). 2805 bytes result sent to driver
+25/06/15 18:11:04 INFO TaskSetManager: Starting task 7.0 in stage 16.0 (TID 60) (10.0.2.15, executor driver, partition 7, ANY, 9602 bytes) 
+25/06/15 18:11:04 INFO Executor: Running task 7.0 in stage 16.0 (TID 60)
+25/06/15 18:11:04 INFO TaskSetManager: Finished task 6.0 in stage 15.0 (TID 51) in 5084 ms on 10.0.2.15 (executor driver) (8/8)
+25/06/15 18:11:04 INFO TaskSchedulerImpl: Removed TaskSet 15.0, whose tasks have all completed, from pool 
+25/06/15 18:11:04 INFO DAGScheduler: ShuffleMapStage 15 (showString at NativeMethodAccessorImpl.java:0) finished in 5,245 s
+25/06/15 18:11:04 INFO DAGScheduler: looking for newly runnable stages
+25/06/15 18:11:04 INFO DAGScheduler: running: Set(ShuffleMapStage 16)
+25/06/15 18:11:04 INFO DAGScheduler: waiting: Set()
+25/06/15 18:11:04 INFO DAGScheduler: failed: Set()
+25/06/15 18:11:04 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 204353664-238412608, partition values: [empty row]
+25/06/15 18:11:04 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/data/dataset_full_cleaned.csv, range: 238412608-268277252, partition values: [empty row]
+25/06/15 18:11:05 INFO BlockManagerInfo: Removed broadcast_12_piece0 on 10.0.2.15:39805 in memory (size: 23.1 KiB, free: 434.3 MiB)
+25/06/15 18:11:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:11:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:11:10 INFO TaskMemoryManager: Memory used in task 53
+25/06/15 18:11:10 INFO TaskMemoryManager: Acquired by org.apache.spark.sql.catalyst.expressions.VariableLengthRowBasedKeyValueBatch@2769dbfd: 2048.0 KiB
+25/06/15 18:11:10 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@6a10de39: 52.2 MiB
+25/06/15 18:11:10 INFO TaskMemoryManager: 0 bytes of memory were used by task 53 but are not associated with specific consumers
+25/06/15 18:11:10 INFO TaskMemoryManager: 386119274 bytes of memory are used for execution and 556175 bytes of memory are used for storage
+25/06/15 18:11:10 INFO UnsafeExternalSorter: Thread 75 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:11 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:11:11 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:11:11 INFO TaskMemoryManager: Memory used in task 56
+25/06/15 18:11:11 INFO TaskMemoryManager: Acquired by org.apache.spark.sql.catalyst.expressions.VariableLengthRowBasedKeyValueBatch@4f80a2f6: 2048.0 KiB
+25/06/15 18:11:11 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@288da175: 52.2 MiB
+25/06/15 18:11:11 INFO TaskMemoryManager: 0 bytes of memory were used by task 56 but are not associated with specific consumers
+25/06/15 18:11:11 INFO TaskMemoryManager: 442987428 bytes of memory are used for execution and 556175 bytes of memory are used for storage
+25/06/15 18:11:11 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:11:11 INFO UnsafeExternalSorter: Thread 72 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:11 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:11:11 INFO TaskMemoryManager: Memory used in task 55
+25/06/15 18:11:11 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@58935a05: 52.2 MiB
+25/06/15 18:11:11 INFO TaskMemoryManager: Acquired by org.apache.spark.sql.catalyst.expressions.VariableLengthRowBasedKeyValueBatch@5b706d5a: 2048.0 KiB
+25/06/15 18:11:11 INFO TaskMemoryManager: 0 bytes of memory were used by task 55 but are not associated with specific consumers
+25/06/15 18:11:11 INFO TaskMemoryManager: 445329918 bytes of memory are used for execution and 556175 bytes of memory are used for storage
+25/06/15 18:11:12 INFO UnsafeExternalSorter: Thread 70 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:12 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:11:12 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:11:12 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:11:12 INFO TaskMemoryManager: Memory used in task 60
+25/06/15 18:11:12 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@7eaf9ea9: 52.2 MiB
+25/06/15 18:11:12 INFO TaskMemoryManager: Acquired by org.apache.spark.sql.catalyst.expressions.VariableLengthRowBasedKeyValueBatch@5dc17338: 2048.0 KiB
+25/06/15 18:11:12 INFO TaskMemoryManager: 0 bytes of memory were used by task 60 but are not associated with specific consumers
+25/06/15 18:11:12 INFO TaskMemoryManager: 452112034 bytes of memory are used for execution and 556175 bytes of memory are used for storage
+25/06/15 18:11:12 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:11:12 INFO TaskMemoryManager: Memory used in task 58
+25/06/15 18:11:12 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@7a19df79: 52.2 MiB
+25/06/15 18:11:12 INFO TaskMemoryManager: Acquired by org.apache.spark.sql.catalyst.expressions.VariableLengthRowBasedKeyValueBatch@13d003c3: 2048.0 KiB
+25/06/15 18:11:12 INFO TaskMemoryManager: 0 bytes of memory were used by task 58 but are not associated with specific consumers
+25/06/15 18:11:12 INFO TaskMemoryManager: 452112034 bytes of memory are used for execution and 556175 bytes of memory are used for storage
+25/06/15 18:11:12 INFO UnsafeExternalSorter: Thread 71 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:12 INFO UnsafeExternalSorter: Thread 74 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:12 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:11:12 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:11:12 INFO TaskMemoryManager: Memory used in task 54
+25/06/15 18:11:12 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@3ab1e967: 52.2 MiB
+25/06/15 18:11:12 INFO TaskMemoryManager: Acquired by org.apache.spark.sql.catalyst.expressions.VariableLengthRowBasedKeyValueBatch@1174dfc9: 2048.0 KiB
+25/06/15 18:11:12 INFO TaskMemoryManager: 0 bytes of memory were used by task 54 but are not associated with specific consumers
+25/06/15 18:11:12 INFO TaskMemoryManager: 400207794 bytes of memory are used for execution and 556175 bytes of memory are used for storage
+25/06/15 18:11:12 INFO UnsafeExternalSorter: Thread 73 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:13 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:11:13 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:11:13 INFO TaskMemoryManager: Memory used in task 57
+25/06/15 18:11:13 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@771b400: 52.2 MiB
+25/06/15 18:11:13 INFO TaskMemoryManager: Acquired by org.apache.spark.sql.catalyst.expressions.VariableLengthRowBasedKeyValueBatch@5c8e3607: 2048.0 KiB
+25/06/15 18:11:13 INFO TaskMemoryManager: 0 bytes of memory were used by task 57 but are not associated with specific consumers
+25/06/15 18:11:13 INFO TaskMemoryManager: 406220284 bytes of memory are used for execution and 556175 bytes of memory are used for storage
+25/06/15 18:11:13 INFO UnsafeExternalSorter: Thread 76 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:13 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:11:13 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+25/06/15 18:11:13 INFO TaskMemoryManager: Memory used in task 59
+25/06/15 18:11:13 INFO TaskMemoryManager: Acquired by org.apache.spark.sql.catalyst.expressions.VariableLengthRowBasedKeyValueBatch@3c4aa1e8: 2048.0 KiB
+25/06/15 18:11:13 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@332b8d9e: 52.2 MiB
+25/06/15 18:11:13 INFO TaskMemoryManager: 0 bytes of memory were used by task 59 but are not associated with specific consumers
+25/06/15 18:11:13 INFO TaskMemoryManager: 354053900 bytes of memory are used for execution and 556175 bytes of memory are used for storage
+25/06/15 18:11:13 INFO UnsafeExternalSorter: Thread 77 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:17 INFO UnsafeExternalSorter: Thread 71 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:11:18 INFO UnsafeExternalSorter: Thread 70 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:18 INFO UnsafeExternalSorter: Thread 73 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:11:19 INFO UnsafeExternalSorter: Thread 77 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:19 INFO UnsafeExternalSorter: Thread 74 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:19 INFO UnsafeExternalSorter: Thread 72 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:11:19 INFO UnsafeExternalSorter: Thread 75 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:20 INFO UnsafeExternalSorter: Thread 76 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:11:23 INFO Executor: Finished task 1.0 in stage 16.0 (TID 54). 3016 bytes result sent to driver
+25/06/15 18:11:23 INFO TaskSetManager: Finished task 1.0 in stage 16.0 (TID 54) in 20143 ms on 10.0.2.15 (executor driver) (1/8)
+25/06/15 18:11:23 INFO Executor: Finished task 7.0 in stage 16.0 (TID 60). 3059 bytes result sent to driver
+25/06/15 18:11:23 INFO TaskSetManager: Finished task 7.0 in stage 16.0 (TID 60) in 18585 ms on 10.0.2.15 (executor driver) (2/8)
+25/06/15 18:11:23 INFO Executor: Finished task 2.0 in stage 16.0 (TID 55). 3016 bytes result sent to driver
+25/06/15 18:11:23 INFO TaskSetManager: Finished task 2.0 in stage 16.0 (TID 55) in 20113 ms on 10.0.2.15 (executor driver) (3/8)
+25/06/15 18:11:23 INFO Executor: Finished task 6.0 in stage 16.0 (TID 59). 3016 bytes result sent to driver
+25/06/15 18:11:23 INFO TaskSetManager: Finished task 6.0 in stage 16.0 (TID 59) in 19001 ms on 10.0.2.15 (executor driver) (4/8)
+25/06/15 18:11:23 INFO Executor: Finished task 4.0 in stage 16.0 (TID 57). 3016 bytes result sent to driver
+25/06/15 18:11:23 INFO TaskSetManager: Finished task 4.0 in stage 16.0 (TID 57) in 20069 ms on 10.0.2.15 (executor driver) (5/8)
+25/06/15 18:11:23 INFO Executor: Finished task 0.0 in stage 16.0 (TID 53). 3016 bytes result sent to driver
+25/06/15 18:11:23 INFO Executor: Finished task 3.0 in stage 16.0 (TID 56). 3016 bytes result sent to driver
+25/06/15 18:11:23 INFO TaskSetManager: Finished task 0.0 in stage 16.0 (TID 53) in 21504 ms on 10.0.2.15 (executor driver) (6/8)
+25/06/15 18:11:23 INFO TaskSetManager: Finished task 3.0 in stage 16.0 (TID 56) in 20475 ms on 10.0.2.15 (executor driver) (7/8)
+25/06/15 18:11:23 INFO Executor: Finished task 5.0 in stage 16.0 (TID 58). 3016 bytes result sent to driver
+25/06/15 18:11:23 INFO TaskSetManager: Finished task 5.0 in stage 16.0 (TID 58) in 19662 ms on 10.0.2.15 (executor driver) (8/8)
+25/06/15 18:11:23 INFO TaskSchedulerImpl: Removed TaskSet 16.0, whose tasks have all completed, from pool 
+25/06/15 18:11:23 INFO DAGScheduler: ShuffleMapStage 16 (showString at NativeMethodAccessorImpl.java:0) finished in 24,043 s
+25/06/15 18:11:23 INFO DAGScheduler: looking for newly runnable stages
+25/06/15 18:11:23 INFO DAGScheduler: running: Set()
+25/06/15 18:11:23 INFO DAGScheduler: waiting: Set()
+25/06/15 18:11:23 INFO DAGScheduler: failed: Set()
+25/06/15 18:11:23 INFO ShufflePartitionsUtil: For shuffle(5), advisory target size: 67108864, actual target size 17112310, minimum partition size: 1048576
+25/06/15 18:11:23 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+25/06/15 18:11:23 INFO SparkContext: Starting job: showString at NativeMethodAccessorImpl.java:0
+25/06/15 18:11:23 INFO DAGScheduler: Got job 9 (showString at NativeMethodAccessorImpl.java:0) with 9 output partitions
+25/06/15 18:11:23 INFO DAGScheduler: Final stage: ResultStage 18 (showString at NativeMethodAccessorImpl.java:0)
+25/06/15 18:11:23 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 17)
+25/06/15 18:11:23 INFO DAGScheduler: Missing parents: List()
+25/06/15 18:11:23 INFO DAGScheduler: Submitting ResultStage 18 (MapPartitionsRDD[41] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+25/06/15 18:11:23 INFO MemoryStore: Block broadcast_14 stored as values in memory (estimated size 52.1 KiB, free 433.8 MiB)
+25/06/15 18:11:23 INFO MemoryStore: Block broadcast_14_piece0 stored as bytes in memory (estimated size 23.7 KiB, free 433.8 MiB)
+25/06/15 18:11:23 INFO BlockManagerInfo: Added broadcast_14_piece0 in memory on 10.0.2.15:39805 (size: 23.7 KiB, free: 434.3 MiB)
+25/06/15 18:11:23 INFO SparkContext: Created broadcast 14 from broadcast at DAGScheduler.scala:1585
+25/06/15 18:11:24 INFO DAGScheduler: Submitting 9 missing tasks from ResultStage 18 (MapPartitionsRDD[41] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8))
+25/06/15 18:11:24 INFO TaskSchedulerImpl: Adding task set 18.0 with 9 tasks resource profile 0
+25/06/15 18:11:24 INFO TaskSetManager: Starting task 0.0 in stage 18.0 (TID 61) (10.0.2.15, executor driver, partition 0, NODE_LOCAL, 8999 bytes) 
+25/06/15 18:11:24 INFO TaskSetManager: Starting task 1.0 in stage 18.0 (TID 62) (10.0.2.15, executor driver, partition 1, NODE_LOCAL, 8999 bytes) 
+25/06/15 18:11:24 INFO TaskSetManager: Starting task 2.0 in stage 18.0 (TID 63) (10.0.2.15, executor driver, partition 2, NODE_LOCAL, 8999 bytes) 
+25/06/15 18:11:24 INFO TaskSetManager: Starting task 3.0 in stage 18.0 (TID 64) (10.0.2.15, executor driver, partition 3, NODE_LOCAL, 8999 bytes) 
+25/06/15 18:11:24 INFO TaskSetManager: Starting task 4.0 in stage 18.0 (TID 65) (10.0.2.15, executor driver, partition 4, NODE_LOCAL, 8999 bytes) 
+25/06/15 18:11:24 INFO TaskSetManager: Starting task 5.0 in stage 18.0 (TID 66) (10.0.2.15, executor driver, partition 5, NODE_LOCAL, 8999 bytes) 
+25/06/15 18:11:24 INFO TaskSetManager: Starting task 6.0 in stage 18.0 (TID 67) (10.0.2.15, executor driver, partition 6, NODE_LOCAL, 8999 bytes) 
+25/06/15 18:11:24 INFO TaskSetManager: Starting task 7.0 in stage 18.0 (TID 68) (10.0.2.15, executor driver, partition 7, NODE_LOCAL, 8999 bytes) 
+25/06/15 18:11:24 INFO Executor: Running task 0.0 in stage 18.0 (TID 61)
+25/06/15 18:11:24 INFO Executor: Running task 1.0 in stage 18.0 (TID 62)
+25/06/15 18:11:24 INFO Executor: Running task 2.0 in stage 18.0 (TID 63)
+25/06/15 18:11:24 INFO Executor: Running task 3.0 in stage 18.0 (TID 64)
+25/06/15 18:11:24 INFO Executor: Running task 6.0 in stage 18.0 (TID 67)
+25/06/15 18:11:24 INFO Executor: Running task 4.0 in stage 18.0 (TID 65)
+25/06/15 18:11:24 INFO Executor: Running task 7.0 in stage 18.0 (TID 68)
+25/06/15 18:11:24 INFO Executor: Running task 5.0 in stage 18.0 (TID 66)
+25/06/15 18:11:24 INFO ShuffleBlockFetcherIterator: Getting 8 (15.7 MiB) non-empty blocks including 8 (15.7 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:24 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+25/06/15 18:11:24 INFO ShuffleBlockFetcherIterator: Getting 8 (16.3 MiB) non-empty blocks including 8 (16.3 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:24 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+25/06/15 18:11:24 INFO ShuffleBlockFetcherIterator: Getting 8 (16.3 MiB) non-empty blocks including 8 (16.3 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:24 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+25/06/15 18:11:24 INFO ShuffleBlockFetcherIterator: Getting 8 (16.3 MiB) non-empty blocks including 8 (16.3 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:24 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 13 ms
+25/06/15 18:11:24 INFO ShuffleBlockFetcherIterator: Getting 8 (15.7 MiB) non-empty blocks including 8 (15.7 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:24 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 5 ms
+25/06/15 18:11:24 INFO ShuffleBlockFetcherIterator: Getting 8 (15.7 MiB) non-empty blocks including 8 (15.7 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:24 INFO ShuffleBlockFetcherIterator: Getting 8 (16.2 MiB) non-empty blocks including 8 (16.2 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:24 INFO ShuffleBlockFetcherIterator: Getting 8 (16.3 MiB) non-empty blocks including 8 (16.3 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:24 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 2 ms
+25/06/15 18:11:24 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 30 ms
+25/06/15 18:11:24 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 45 ms
+25/06/15 18:11:24 INFO TaskMemoryManager: Memory used in task 67
+25/06/15 18:11:24 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@69126f8e: 54.2 MiB
+25/06/15 18:11:24 INFO TaskMemoryManager: 0 bytes of memory were used by task 67 but are not associated with specific consumers
+25/06/15 18:11:24 INFO TaskMemoryManager: 333681065 bytes of memory are used for execution and 633882 bytes of memory are used for storage
+25/06/15 18:11:24 INFO UnsafeExternalSorter: Thread 71 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:24 INFO TaskMemoryManager: Memory used in task 64
+25/06/15 18:11:24 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@353bcb31: 54.2 MiB
+25/06/15 18:11:24 INFO TaskMemoryManager: 0 bytes of memory were used by task 64 but are not associated with specific consumers
+25/06/15 18:11:24 INFO TaskMemoryManager: 356985234 bytes of memory are used for execution and 633882 bytes of memory are used for storage
+25/06/15 18:11:25 INFO BlockManagerInfo: Removed broadcast_13_piece0 on 10.0.2.15:39805 in memory (size: 23.1 KiB, free: 434.3 MiB)
+25/06/15 18:11:25 INFO TaskMemoryManager: Memory used in task 63
+25/06/15 18:11:25 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@127d4106: 54.2 MiB
+25/06/15 18:11:25 INFO TaskMemoryManager: 0 bytes of memory were used by task 63 but are not associated with specific consumers
+25/06/15 18:11:25 INFO TaskMemoryManager: 363521981 bytes of memory are used for execution and 556301 bytes of memory are used for storage
+25/06/15 18:11:25 INFO UnsafeExternalSorter: Thread 76 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:25 INFO UnsafeExternalSorter: Thread 75 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:25 INFO TaskMemoryManager: Memory used in task 62
+25/06/15 18:11:25 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@1e31f0cf: 54.2 MiB
+25/06/15 18:11:25 INFO TaskMemoryManager: 0 bytes of memory were used by task 62 but are not associated with specific consumers
+25/06/15 18:11:25 INFO TaskMemoryManager: 391030216 bytes of memory are used for execution and 556301 bytes of memory are used for storage
+25/06/15 18:11:25 INFO UnsafeExternalSorter: Thread 72 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:25 INFO TaskMemoryManager: Memory used in task 61
+25/06/15 18:11:25 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@1b81f61b: 54.2 MiB
+25/06/15 18:11:25 INFO TaskMemoryManager: 0 bytes of memory were used by task 61 but are not associated with specific consumers
+25/06/15 18:11:25 INFO TaskMemoryManager: 397566899 bytes of memory are used for execution and 556301 bytes of memory are used for storage
+25/06/15 18:11:25 INFO TaskMemoryManager: Memory used in task 66
+25/06/15 18:11:25 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@73332aa: 54.2 MiB
+25/06/15 18:11:25 INFO TaskMemoryManager: 0 bytes of memory were used by task 66 but are not associated with specific consumers
+25/06/15 18:11:25 INFO TaskMemoryManager: 446046494 bytes of memory are used for execution and 556301 bytes of memory are used for storage
+25/06/15 18:11:25 INFO UnsafeExternalSorter: Thread 70 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:25 INFO TaskMemoryManager: Memory used in task 65
+25/06/15 18:11:25 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@3e3cabe3: 54.2 MiB
+25/06/15 18:11:25 INFO TaskMemoryManager: 0 bytes of memory were used by task 65 but are not associated with specific consumers
+25/06/15 18:11:25 INFO TaskMemoryManager: 454680377 bytes of memory are used for execution and 556301 bytes of memory are used for storage
+25/06/15 18:11:25 INFO UnsafeExternalSorter: Thread 77 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:25 INFO TaskMemoryManager: Memory used in task 68
+25/06/15 18:11:25 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@77d1e148: 54.2 MiB
+25/06/15 18:11:25 INFO TaskMemoryManager: 0 bytes of memory were used by task 68 but are not associated with specific consumers
+25/06/15 18:11:25 INFO TaskMemoryManager: 454925716 bytes of memory are used for execution and 556301 bytes of memory are used for storage
+25/06/15 18:11:25 INFO UnsafeExternalSorter: Thread 74 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:25 INFO UnsafeExternalSorter: Thread 73 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:26 INFO UnsafeExternalSorter: Thread 71 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:11:26 INFO UnsafeExternalSorter: Thread 76 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:11:26 INFO UnsafeExternalSorter: Thread 72 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:11:26 INFO UnsafeExternalSorter: Thread 75 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:11:27 INFO UnsafeExternalSorter: Thread 74 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:11:27 INFO UnsafeExternalSorter: Thread 77 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:11:27 INFO UnsafeExternalSorter: Thread 73 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:11:27 INFO UnsafeExternalSorter: Thread 70 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:11:27 INFO Executor: Finished task 6.0 in stage 18.0 (TID 67). 524544 bytes result sent to driver
+25/06/15 18:11:27 INFO TaskSetManager: Starting task 8.0 in stage 18.0 (TID 69) (10.0.2.15, executor driver, partition 8, NODE_LOCAL, 8999 bytes) 
+25/06/15 18:11:27 INFO Executor: Running task 8.0 in stage 18.0 (TID 69)
+25/06/15 18:11:27 INFO ShuffleBlockFetcherIterator: Getting 8 (2035.2 KiB) non-empty blocks including 8 (2035.2 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:27 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 13 ms
+25/06/15 18:11:27 INFO TaskSetManager: Finished task 6.0 in stage 18.0 (TID 67) in 3871 ms on 10.0.2.15 (executor driver) (1/9)
+25/06/15 18:11:28 INFO Executor: Finished task 8.0 in stage 18.0 (TID 69). 524266 bytes result sent to driver
+25/06/15 18:11:28 INFO Executor: Finished task 3.0 in stage 18.0 (TID 64). 524712 bytes result sent to driver
+25/06/15 18:11:28 INFO TaskSetManager: Finished task 8.0 in stage 18.0 (TID 69) in 664 ms on 10.0.2.15 (executor driver) (2/9)
+25/06/15 18:11:28 INFO TaskSetManager: Finished task 3.0 in stage 18.0 (TID 64) in 4436 ms on 10.0.2.15 (executor driver) (3/9)
+25/06/15 18:11:28 INFO Executor: Finished task 1.0 in stage 18.0 (TID 62). 524826 bytes result sent to driver
+25/06/15 18:11:28 INFO TaskSetManager: Finished task 1.0 in stage 18.0 (TID 62) in 4800 ms on 10.0.2.15 (executor driver) (4/9)
+25/06/15 18:11:29 INFO Executor: Finished task 5.0 in stage 18.0 (TID 66). 524096 bytes result sent to driver
+25/06/15 18:11:29 INFO Executor: Finished task 4.0 in stage 18.0 (TID 65). 524962 bytes result sent to driver
+25/06/15 18:11:29 INFO TaskSetManager: Finished task 5.0 in stage 18.0 (TID 66) in 5134 ms on 10.0.2.15 (executor driver) (5/9)
+25/06/15 18:11:29 INFO TaskSetManager: Finished task 4.0 in stage 18.0 (TID 65) in 5135 ms on 10.0.2.15 (executor driver) (6/9)
+25/06/15 18:11:29 INFO Executor: Finished task 2.0 in stage 18.0 (TID 63). 524400 bytes result sent to driver
+25/06/15 18:11:29 INFO TaskSetManager: Finished task 2.0 in stage 18.0 (TID 63) in 5181 ms on 10.0.2.15 (executor driver) (7/9)
+25/06/15 18:11:29 INFO Executor: Finished task 7.0 in stage 18.0 (TID 68). 524512 bytes result sent to driver
+25/06/15 18:11:29 INFO TaskSetManager: Finished task 7.0 in stage 18.0 (TID 68) in 5280 ms on 10.0.2.15 (executor driver) (8/9)
+25/06/15 18:11:29 INFO Executor: Finished task 0.0 in stage 18.0 (TID 61). 524986 bytes result sent to driver
+25/06/15 18:11:29 INFO TaskSetManager: Finished task 0.0 in stage 18.0 (TID 61) in 5393 ms on 10.0.2.15 (executor driver) (9/9)
+25/06/15 18:11:29 INFO TaskSchedulerImpl: Removed TaskSet 18.0, whose tasks have all completed, from pool 
+25/06/15 18:11:29 INFO DAGScheduler: ResultStage 18 (showString at NativeMethodAccessorImpl.java:0) finished in 5,453 s
+25/06/15 18:11:29 INFO DAGScheduler: Job 9 is finished. Cancelling potential speculative or zombie tasks for this job
+25/06/15 18:11:29 INFO TaskSchedulerImpl: Killing all running tasks in stage 18: Stage finished
+25/06/15 18:11:29 INFO DAGScheduler: Job 9 finished: showString at NativeMethodAccessorImpl.java:0, took 5,466191 s
+25/06/15 18:11:29 INFO DAGScheduler: Registering RDD 42 (showString at NativeMethodAccessorImpl.java:0) as input to shuffle 6
+25/06/15 18:11:29 INFO DAGScheduler: Got map stage job 10 (showString at NativeMethodAccessorImpl.java:0) with 9 output partitions
+25/06/15 18:11:29 INFO DAGScheduler: Final stage: ShuffleMapStage 20 (showString at NativeMethodAccessorImpl.java:0)
+25/06/15 18:11:29 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 19)
+25/06/15 18:11:29 INFO DAGScheduler: Missing parents: List()
+25/06/15 18:11:29 INFO DAGScheduler: Submitting ShuffleMapStage 20 (MapPartitionsRDD[42] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+25/06/15 18:11:29 INFO MemoryStore: Block broadcast_15 stored as values in memory (estimated size 67.2 KiB, free 433.8 MiB)
+25/06/15 18:11:29 INFO MemoryStore: Block broadcast_15_piece0 stored as bytes in memory (estimated size 29.2 KiB, free 433.8 MiB)
+25/06/15 18:11:29 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on 10.0.2.15:39805 (size: 29.2 KiB, free: 434.3 MiB)
+25/06/15 18:11:29 INFO SparkContext: Created broadcast 15 from broadcast at DAGScheduler.scala:1585
+25/06/15 18:11:29 INFO DAGScheduler: Submitting 9 missing tasks from ShuffleMapStage 20 (MapPartitionsRDD[42] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8))
+25/06/15 18:11:29 INFO TaskSchedulerImpl: Adding task set 20.0 with 9 tasks resource profile 0
+25/06/15 18:11:29 INFO TaskSetManager: Starting task 0.0 in stage 20.0 (TID 70) (10.0.2.15, executor driver, partition 0, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:11:29 INFO TaskSetManager: Starting task 1.0 in stage 20.0 (TID 71) (10.0.2.15, executor driver, partition 1, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:11:29 INFO TaskSetManager: Starting task 2.0 in stage 20.0 (TID 72) (10.0.2.15, executor driver, partition 2, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:11:29 INFO TaskSetManager: Starting task 3.0 in stage 20.0 (TID 73) (10.0.2.15, executor driver, partition 3, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:11:29 INFO TaskSetManager: Starting task 4.0 in stage 20.0 (TID 74) (10.0.2.15, executor driver, partition 4, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:11:29 INFO TaskSetManager: Starting task 5.0 in stage 20.0 (TID 75) (10.0.2.15, executor driver, partition 5, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:11:29 INFO TaskSetManager: Starting task 6.0 in stage 20.0 (TID 76) (10.0.2.15, executor driver, partition 6, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:11:29 INFO TaskSetManager: Starting task 7.0 in stage 20.0 (TID 77) (10.0.2.15, executor driver, partition 7, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:11:29 INFO Executor: Running task 0.0 in stage 20.0 (TID 70)
+25/06/15 18:11:29 INFO Executor: Running task 2.0 in stage 20.0 (TID 72)
+25/06/15 18:11:29 INFO Executor: Running task 3.0 in stage 20.0 (TID 73)
+25/06/15 18:11:29 INFO Executor: Running task 1.0 in stage 20.0 (TID 71)
+25/06/15 18:11:29 INFO Executor: Running task 7.0 in stage 20.0 (TID 77)
+25/06/15 18:11:29 INFO Executor: Running task 5.0 in stage 20.0 (TID 75)
+25/06/15 18:11:29 INFO Executor: Running task 4.0 in stage 20.0 (TID 74)
+25/06/15 18:11:29 INFO Executor: Running task 6.0 in stage 20.0 (TID 76)
+25/06/15 18:11:29 INFO ShuffleBlockFetcherIterator: Getting 8 (16.2 MiB) non-empty blocks including 8 (16.2 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 8 ms
+25/06/15 18:11:29 INFO ShuffleBlockFetcherIterator: Getting 8 (15.7 MiB) non-empty blocks including 8 (15.7 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+25/06/15 18:11:29 INFO ShuffleBlockFetcherIterator: Getting 8 (16.3 MiB) non-empty blocks including 8 (16.3 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+25/06/15 18:11:29 INFO ShuffleBlockFetcherIterator: Getting 8 (16.3 MiB) non-empty blocks including 8 (16.3 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+25/06/15 18:11:29 INFO ShuffleBlockFetcherIterator: Getting 8 (15.7 MiB) non-empty blocks including 8 (15.7 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+25/06/15 18:11:29 INFO ShuffleBlockFetcherIterator: Getting 8 (16.3 MiB) non-empty blocks including 8 (16.3 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 2 ms
+25/06/15 18:11:29 INFO ShuffleBlockFetcherIterator: Getting 8 (16.3 MiB) non-empty blocks including 8 (16.3 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:29 INFO ShuffleBlockFetcherIterator: Getting 8 (15.7 MiB) non-empty blocks including 8 (15.7 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 6 ms
+25/06/15 18:11:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 12 ms
+25/06/15 18:11:29 INFO BlockManagerInfo: Removed broadcast_14_piece0 on 10.0.2.15:39805 in memory (size: 23.7 KiB, free: 434.3 MiB)
+25/06/15 18:11:30 INFO TaskMemoryManager: Memory used in task 74
+25/06/15 18:11:30 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@4d5cd5f3: 54.2 MiB
+25/06/15 18:11:30 INFO TaskMemoryManager: 0 bytes of memory were used by task 74 but are not associated with specific consumers
+25/06/15 18:11:30 INFO TaskMemoryManager: 352562386 bytes of memory are used for execution and 577359 bytes of memory are used for storage
+25/06/15 18:11:30 INFO UnsafeExternalSorter: Thread 70 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:30 INFO TaskMemoryManager: Memory used in task 70
+25/06/15 18:11:30 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@71f5d2f7: 54.2 MiB
+25/06/15 18:11:30 INFO TaskMemoryManager: 0 bytes of memory were used by task 70 but are not associated with specific consumers
+25/06/15 18:11:30 INFO TaskMemoryManager: 382407702 bytes of memory are used for execution and 577359 bytes of memory are used for storage
+25/06/15 18:11:30 INFO TaskMemoryManager: Memory used in task 77
+25/06/15 18:11:30 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@11bbbf68: 54.2 MiB
+25/06/15 18:11:30 INFO TaskMemoryManager: 0 bytes of memory were used by task 77 but are not associated with specific consumers
+25/06/15 18:11:30 INFO TaskMemoryManager: 382407702 bytes of memory are used for execution and 577359 bytes of memory are used for storage
+25/06/15 18:11:30 INFO UnsafeExternalSorter: Thread 74 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:31 INFO UnsafeExternalSorter: Thread 71 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:31 INFO TaskMemoryManager: Memory used in task 72
+25/06/15 18:11:31 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@234755d8: 54.2 MiB
+25/06/15 18:11:31 INFO TaskMemoryManager: 0 bytes of memory were used by task 72 but are not associated with specific consumers
+25/06/15 18:11:31 INFO TaskMemoryManager: 412010440 bytes of memory are used for execution and 577359 bytes of memory are used for storage
+25/06/15 18:11:31 INFO TaskMemoryManager: Memory used in task 71
+25/06/15 18:11:31 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@55d75b4: 54.2 MiB
+25/06/15 18:11:31 INFO TaskMemoryManager: 0 bytes of memory were used by task 71 but are not associated with specific consumers
+25/06/15 18:11:31 INFO TaskMemoryManager: 414350282 bytes of memory are used for execution and 577359 bytes of memory are used for storage
+25/06/15 18:11:31 INFO UnsafeExternalSorter: Thread 73 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:31 INFO UnsafeExternalSorter: Thread 75 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:31 INFO TaskMemoryManager: Memory used in task 73
+25/06/15 18:11:31 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@1bb5c74: 54.2 MiB
+25/06/15 18:11:31 INFO TaskMemoryManager: 0 bytes of memory were used by task 73 but are not associated with specific consumers
+25/06/15 18:11:31 INFO TaskMemoryManager: 443952956 bytes of memory are used for execution and 577359 bytes of memory are used for storage
+25/06/15 18:11:31 INFO UnsafeExternalSorter: Thread 77 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:31 INFO TaskMemoryManager: Memory used in task 75
+25/06/15 18:11:31 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@96d8815: 54.2 MiB
+25/06/15 18:11:31 INFO TaskMemoryManager: 0 bytes of memory were used by task 75 but are not associated with specific consumers
+25/06/15 18:11:31 INFO TaskMemoryManager: 454681342 bytes of memory are used for execution and 577359 bytes of memory are used for storage
+25/06/15 18:11:31 INFO TaskMemoryManager: Memory used in task 76
+25/06/15 18:11:31 INFO TaskMemoryManager: Acquired by org.apache.spark.unsafe.map.BytesToBytesMap@553889f3: 54.2 MiB
+25/06/15 18:11:31 INFO TaskMemoryManager: 0 bytes of memory were used by task 76 but are not associated with specific consumers
+25/06/15 18:11:31 INFO TaskMemoryManager: 454924048 bytes of memory are used for execution and 577359 bytes of memory are used for storage
+25/06/15 18:11:31 INFO UnsafeExternalSorter: Thread 76 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:31 INFO UnsafeExternalSorter: Thread 72 spilling sort data of 16.0 MiB to disk (0  time so far)
+25/06/15 18:11:31 INFO UnsafeExternalSorter: Thread 70 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:11:31 INFO UnsafeExternalSorter: Thread 74 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:11:32 INFO UnsafeExternalSorter: Thread 73 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:11:32 INFO UnsafeExternalSorter: Thread 71 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:11:32 INFO UnsafeExternalSorter: Thread 77 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:11:32 INFO UnsafeExternalSorter: Thread 75 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:11:33 INFO UnsafeExternalSorter: Thread 76 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:11:33 INFO UnsafeExternalSorter: Thread 72 spilling sort data of 8.0 MiB to disk (0  time so far)
+25/06/15 18:11:35 INFO Executor: Finished task 0.0 in stage 20.0 (TID 70). 5798 bytes result sent to driver
+25/06/15 18:11:35 INFO TaskSetManager: Starting task 8.0 in stage 20.0 (TID 78) (10.0.2.15, executor driver, partition 8, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:11:35 INFO TaskSetManager: Finished task 0.0 in stage 20.0 (TID 70) in 5795 ms on 10.0.2.15 (executor driver) (1/9)
+25/06/15 18:11:35 INFO Executor: Running task 8.0 in stage 20.0 (TID 78)
+25/06/15 18:11:35 INFO ShuffleBlockFetcherIterator: Getting 8 (2035.2 KiB) non-empty blocks including 8 (2035.2 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:35 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 20 ms
+25/06/15 18:11:35 INFO Executor: Finished task 1.0 in stage 20.0 (TID 71). 5798 bytes result sent to driver
+25/06/15 18:11:35 INFO TaskSetManager: Finished task 1.0 in stage 20.0 (TID 71) in 6152 ms on 10.0.2.15 (executor driver) (2/9)
+25/06/15 18:11:35 INFO Executor: Finished task 3.0 in stage 20.0 (TID 73). 5798 bytes result sent to driver
+25/06/15 18:11:35 INFO TaskSetManager: Finished task 3.0 in stage 20.0 (TID 73) in 6243 ms on 10.0.2.15 (executor driver) (3/9)
+25/06/15 18:11:35 INFO Executor: Finished task 4.0 in stage 20.0 (TID 74). 5755 bytes result sent to driver
+25/06/15 18:11:35 INFO TaskSetManager: Finished task 4.0 in stage 20.0 (TID 74) in 6296 ms on 10.0.2.15 (executor driver) (4/9)
+25/06/15 18:11:36 INFO Executor: Finished task 2.0 in stage 20.0 (TID 72). 5755 bytes result sent to driver
+25/06/15 18:11:36 INFO TaskSetManager: Finished task 2.0 in stage 20.0 (TID 72) in 6327 ms on 10.0.2.15 (executor driver) (5/9)
+25/06/15 18:11:36 INFO Executor: Finished task 6.0 in stage 20.0 (TID 76). 5755 bytes result sent to driver
+25/06/15 18:11:36 INFO TaskSetManager: Finished task 6.0 in stage 20.0 (TID 76) in 6388 ms on 10.0.2.15 (executor driver) (6/9)
+25/06/15 18:11:36 INFO Executor: Finished task 8.0 in stage 20.0 (TID 78). 5626 bytes result sent to driver
+25/06/15 18:11:36 INFO TaskSetManager: Finished task 8.0 in stage 20.0 (TID 78) in 745 ms on 10.0.2.15 (executor driver) (7/9)
+25/06/15 18:11:36 INFO Executor: Finished task 5.0 in stage 20.0 (TID 75). 5755 bytes result sent to driver
+25/06/15 18:11:36 INFO TaskSetManager: Finished task 5.0 in stage 20.0 (TID 75) in 6548 ms on 10.0.2.15 (executor driver) (8/9)
+25/06/15 18:11:36 INFO Executor: Finished task 7.0 in stage 20.0 (TID 77). 5755 bytes result sent to driver
+25/06/15 18:11:36 INFO TaskSetManager: Finished task 7.0 in stage 20.0 (TID 77) in 6578 ms on 10.0.2.15 (executor driver) (9/9)
+25/06/15 18:11:36 INFO TaskSchedulerImpl: Removed TaskSet 20.0, whose tasks have all completed, from pool 
+25/06/15 18:11:36 INFO DAGScheduler: ShuffleMapStage 20 (showString at NativeMethodAccessorImpl.java:0) finished in 6,669 s
+25/06/15 18:11:36 INFO DAGScheduler: looking for newly runnable stages
+25/06/15 18:11:36 INFO DAGScheduler: running: Set()
+25/06/15 18:11:36 INFO DAGScheduler: waiting: Set()
+25/06/15 18:11:36 INFO DAGScheduler: failed: Set()
+25/06/15 18:11:36 INFO ShufflePartitionsUtil: For shuffle(6), advisory target size: 67108864, actual target size 11532642, minimum partition size: 1048576
+25/06/15 18:11:36 INFO DAGScheduler: Registering RDD 46 (showString at NativeMethodAccessorImpl.java:0) as input to shuffle 7
+25/06/15 18:11:36 INFO DAGScheduler: Got map stage job 11 (showString at NativeMethodAccessorImpl.java:0) with 9 output partitions
+25/06/15 18:11:36 INFO DAGScheduler: Final stage: ShuffleMapStage 23 (showString at NativeMethodAccessorImpl.java:0)
+25/06/15 18:11:36 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 22)
+25/06/15 18:11:36 INFO DAGScheduler: Missing parents: List()
+25/06/15 18:11:36 INFO DAGScheduler: Submitting ShuffleMapStage 23 (MapPartitionsRDD[46] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+25/06/15 18:11:36 INFO MemoryStore: Block broadcast_16 stored as values in memory (estimated size 52.8 KiB, free 433.8 MiB)
+25/06/15 18:11:36 INFO MemoryStore: Block broadcast_16_piece0 stored as bytes in memory (estimated size 24.1 KiB, free 433.8 MiB)
+25/06/15 18:11:36 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on 10.0.2.15:39805 (size: 24.1 KiB, free: 434.3 MiB)
+25/06/15 18:11:36 INFO SparkContext: Created broadcast 16 from broadcast at DAGScheduler.scala:1585
+25/06/15 18:11:36 INFO DAGScheduler: Submitting 9 missing tasks from ShuffleMapStage 23 (MapPartitionsRDD[46] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8))
+25/06/15 18:11:36 INFO TaskSchedulerImpl: Adding task set 23.0 with 9 tasks resource profile 0
+25/06/15 18:11:36 INFO TaskSetManager: Starting task 0.0 in stage 23.0 (TID 79) (10.0.2.15, executor driver, partition 0, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:11:36 INFO TaskSetManager: Starting task 1.0 in stage 23.0 (TID 80) (10.0.2.15, executor driver, partition 1, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:11:36 INFO TaskSetManager: Starting task 2.0 in stage 23.0 (TID 81) (10.0.2.15, executor driver, partition 2, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:11:36 INFO TaskSetManager: Starting task 3.0 in stage 23.0 (TID 82) (10.0.2.15, executor driver, partition 3, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:11:36 INFO TaskSetManager: Starting task 4.0 in stage 23.0 (TID 83) (10.0.2.15, executor driver, partition 4, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:11:36 INFO TaskSetManager: Starting task 5.0 in stage 23.0 (TID 84) (10.0.2.15, executor driver, partition 5, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:11:36 INFO TaskSetManager: Starting task 6.0 in stage 23.0 (TID 85) (10.0.2.15, executor driver, partition 6, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:11:36 INFO TaskSetManager: Starting task 7.0 in stage 23.0 (TID 86) (10.0.2.15, executor driver, partition 7, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:11:36 INFO Executor: Running task 0.0 in stage 23.0 (TID 79)
+25/06/15 18:11:36 INFO Executor: Running task 7.0 in stage 23.0 (TID 86)
+25/06/15 18:11:36 INFO Executor: Running task 6.0 in stage 23.0 (TID 85)
+25/06/15 18:11:36 INFO Executor: Running task 4.0 in stage 23.0 (TID 83)
+25/06/15 18:11:36 INFO Executor: Running task 2.0 in stage 23.0 (TID 81)
+25/06/15 18:11:36 INFO Executor: Running task 5.0 in stage 23.0 (TID 84)
+25/06/15 18:11:36 INFO Executor: Running task 3.0 in stage 23.0 (TID 82)
+25/06/15 18:11:36 INFO Executor: Running task 1.0 in stage 23.0 (TID 80)
+25/06/15 18:11:36 INFO ShuffleBlockFetcherIterator: Getting 9 (10.6 MiB) non-empty blocks including 9 (10.6 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:36 INFO ShuffleBlockFetcherIterator: Getting 9 (10.7 MiB) non-empty blocks including 9 (10.7 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:36 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 13 ms
+25/06/15 18:11:36 INFO ShuffleBlockFetcherIterator: Getting 9 (10.6 MiB) non-empty blocks including 9 (10.6 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:36 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 4 ms
+25/06/15 18:11:36 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 10 ms
+25/06/15 18:11:36 INFO ShuffleBlockFetcherIterator: Getting 9 (10.7 MiB) non-empty blocks including 9 (10.7 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:36 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+25/06/15 18:11:36 INFO ShuffleBlockFetcherIterator: Getting 9 (10.5 MiB) non-empty blocks including 9 (10.5 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:36 INFO ShuffleBlockFetcherIterator: Getting 9 (10.5 MiB) non-empty blocks including 9 (10.5 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:36 INFO ShuffleBlockFetcherIterator: Getting 9 (11.0 MiB) non-empty blocks including 9 (11.0 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:36 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 20 ms
+25/06/15 18:11:36 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 34 ms
+25/06/15 18:11:36 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 29 ms
+25/06/15 18:11:36 INFO ShuffleBlockFetcherIterator: Getting 9 (10.6 MiB) non-empty blocks including 9 (10.6 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:36 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 52 ms
+25/06/15 18:11:36 INFO UnsafeExternalSorter: Thread 71 spilling sort data of 54.0 MiB to disk (0  time so far)
+25/06/15 18:11:36 INFO UnsafeExternalSorter: Thread 73 spilling sort data of 54.0 MiB to disk (0  time so far)
+25/06/15 18:11:36 INFO UnsafeExternalSorter: Thread 70 spilling sort data of 54.0 MiB to disk (0  time so far)
+25/06/15 18:11:36 INFO UnsafeExternalSorter: Thread 74 spilling sort data of 54.0 MiB to disk (0  time so far)
+25/06/15 18:11:36 INFO UnsafeExternalSorter: Thread 72 spilling sort data of 54.0 MiB to disk (0  time so far)
+25/06/15 18:11:36 INFO UnsafeExternalSorter: Thread 77 spilling sort data of 54.0 MiB to disk (0  time so far)
+25/06/15 18:11:37 INFO UnsafeExternalSorter: Thread 76 spilling sort data of 54.0 MiB to disk (0  time so far)
+25/06/15 18:11:37 INFO UnsafeExternalSorter: Thread 75 spilling sort data of 54.0 MiB to disk (0  time so far)
+25/06/15 18:11:38 INFO BlockManagerInfo: Removed broadcast_15_piece0 on 10.0.2.15:39805 in memory (size: 29.2 KiB, free: 434.3 MiB)
+25/06/15 18:11:39 INFO Executor: Finished task 7.0 in stage 23.0 (TID 86). 7323 bytes result sent to driver
+25/06/15 18:11:39 INFO TaskSetManager: Starting task 8.0 in stage 23.0 (TID 87) (10.0.2.15, executor driver, partition 8, NODE_LOCAL, 8988 bytes) 
+25/06/15 18:11:39 INFO Executor: Running task 8.0 in stage 23.0 (TID 87)
+25/06/15 18:11:39 INFO TaskSetManager: Finished task 7.0 in stage 23.0 (TID 86) in 3394 ms on 10.0.2.15 (executor driver) (1/9)
+25/06/15 18:11:39 INFO Executor: Finished task 0.0 in stage 23.0 (TID 79). 7280 bytes result sent to driver
+25/06/15 18:11:39 INFO TaskSetManager: Finished task 0.0 in stage 23.0 (TID 79) in 3430 ms on 10.0.2.15 (executor driver) (2/9)
+25/06/15 18:11:40 INFO Executor: Finished task 2.0 in stage 23.0 (TID 81). 7323 bytes result sent to driver
+25/06/15 18:11:40 INFO TaskSetManager: Finished task 2.0 in stage 23.0 (TID 81) in 3571 ms on 10.0.2.15 (executor driver) (3/9)
+25/06/15 18:11:40 INFO ShuffleBlockFetcherIterator: Getting 9 (2.6 MiB) non-empty blocks including 9 (2.6 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+25/06/15 18:11:40 INFO Executor: Finished task 4.0 in stage 23.0 (TID 83). 7280 bytes result sent to driver
+25/06/15 18:11:40 INFO TaskSetManager: Finished task 4.0 in stage 23.0 (TID 83) in 3783 ms on 10.0.2.15 (executor driver) (4/9)
+25/06/15 18:11:40 INFO Executor: Finished task 6.0 in stage 23.0 (TID 85). 7280 bytes result sent to driver
+25/06/15 18:11:40 INFO TaskSetManager: Finished task 6.0 in stage 23.0 (TID 85) in 3871 ms on 10.0.2.15 (executor driver) (5/9)
+25/06/15 18:11:40 INFO Executor: Finished task 3.0 in stage 23.0 (TID 82). 7280 bytes result sent to driver
+25/06/15 18:11:40 INFO TaskSetManager: Finished task 3.0 in stage 23.0 (TID 82) in 3876 ms on 10.0.2.15 (executor driver) (6/9)
+25/06/15 18:11:40 INFO Executor: Finished task 5.0 in stage 23.0 (TID 84). 7280 bytes result sent to driver
+25/06/15 18:11:40 INFO TaskSetManager: Finished task 5.0 in stage 23.0 (TID 84) in 3943 ms on 10.0.2.15 (executor driver) (7/9)
+25/06/15 18:11:40 INFO Executor: Finished task 1.0 in stage 23.0 (TID 80). 7323 bytes result sent to driver
+25/06/15 18:11:40 INFO TaskSetManager: Finished task 1.0 in stage 23.0 (TID 80) in 3991 ms on 10.0.2.15 (executor driver) (8/9)
+25/06/15 18:11:40 INFO Executor: Finished task 8.0 in stage 23.0 (TID 87). 7151 bytes result sent to driver
+25/06/15 18:11:40 INFO TaskSetManager: Finished task 8.0 in stage 23.0 (TID 87) in 702 ms on 10.0.2.15 (executor driver) (9/9)
+25/06/15 18:11:40 INFO TaskSchedulerImpl: Removed TaskSet 23.0, whose tasks have all completed, from pool 
+25/06/15 18:11:40 INFO DAGScheduler: ShuffleMapStage 23 (showString at NativeMethodAccessorImpl.java:0) finished in 4,155 s
+25/06/15 18:11:40 INFO DAGScheduler: looking for newly runnable stages
+25/06/15 18:11:40 INFO DAGScheduler: running: Set()
+25/06/15 18:11:40 INFO DAGScheduler: waiting: Set()
+25/06/15 18:11:40 INFO DAGScheduler: failed: Set()
+25/06/15 18:11:40 INFO ShufflePartitionsUtil: For shuffle(7), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+25/06/15 18:11:40 INFO SparkContext: Starting job: $anonfun$withThreadLocalCaptured$1 at FutureTask.java:264
+25/06/15 18:11:40 INFO DAGScheduler: Got job 12 ($anonfun$withThreadLocalCaptured$1 at FutureTask.java:264) with 1 output partitions
+25/06/15 18:11:40 INFO DAGScheduler: Final stage: ResultStage 27 ($anonfun$withThreadLocalCaptured$1 at FutureTask.java:264)
+25/06/15 18:11:40 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 26)
+25/06/15 18:11:40 INFO DAGScheduler: Missing parents: List()
+25/06/15 18:11:40 INFO DAGScheduler: Submitting ResultStage 27 (MapPartitionsRDD[54] at $anonfun$withThreadLocalCaptured$1 at FutureTask.java:264), which has no missing parents
+25/06/15 18:11:40 INFO MemoryStore: Block broadcast_17 stored as values in memory (estimated size 65.7 KiB, free 433.8 MiB)
+25/06/15 18:11:40 INFO MemoryStore: Block broadcast_17_piece0 stored as bytes in memory (estimated size 29.0 KiB, free 433.8 MiB)
+25/06/15 18:11:40 INFO BlockManagerInfo: Added broadcast_17_piece0 in memory on 10.0.2.15:39805 (size: 29.0 KiB, free: 434.3 MiB)
+25/06/15 18:11:40 INFO SparkContext: Created broadcast 17 from broadcast at DAGScheduler.scala:1585
+25/06/15 18:11:40 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 27 (MapPartitionsRDD[54] at $anonfun$withThreadLocalCaptured$1 at FutureTask.java:264) (first 15 tasks are for partitions Vector(0))
+25/06/15 18:11:40 INFO TaskSchedulerImpl: Adding task set 27.0 with 1 tasks resource profile 0
+25/06/15 18:11:40 INFO TaskSetManager: Starting task 0.0 in stage 27.0 (TID 88) (10.0.2.15, executor driver, partition 0, NODE_LOCAL, 8999 bytes) 
+25/06/15 18:11:40 INFO Executor: Running task 0.0 in stage 27.0 (TID 88)
+25/06/15 18:11:40 INFO ShuffleBlockFetcherIterator: Getting 9 (860.2 KiB) non-empty blocks including 9 (860.2 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 3 ms
+25/06/15 18:11:40 INFO ObjectAggregationIterator: Aggregation hash map size 128 reaches threshold capacity (128 entries), spilling and falling back to sort based aggregation. You may change the threshold by adjust option spark.sql.objectHashAggregate.sortBased.fallbackThreshold
+25/06/15 18:11:40 INFO ObjectAggregationIterator: Aggregation hash map size 128 reaches threshold capacity (128 entries), spilling and falling back to sort based aggregation. You may change the threshold by adjust option spark.sql.objectHashAggregate.sortBased.fallbackThreshold
+25/06/15 18:11:40 INFO Executor: Finished task 0.0 in stage 27.0 (TID 88). 261225 bytes result sent to driver
+25/06/15 18:11:40 INFO TaskSetManager: Finished task 0.0 in stage 27.0 (TID 88) in 279 ms on 10.0.2.15 (executor driver) (1/1)
+25/06/15 18:11:40 INFO TaskSchedulerImpl: Removed TaskSet 27.0, whose tasks have all completed, from pool 
+25/06/15 18:11:40 INFO DAGScheduler: ResultStage 27 ($anonfun$withThreadLocalCaptured$1 at FutureTask.java:264) finished in 0,312 s
+25/06/15 18:11:41 INFO DAGScheduler: Job 12 is finished. Cancelling potential speculative or zombie tasks for this job
+25/06/15 18:11:41 INFO TaskSchedulerImpl: Killing all running tasks in stage 27: Stage finished
+25/06/15 18:11:41 INFO DAGScheduler: Job 12 finished: $anonfun$withThreadLocalCaptured$1 at FutureTask.java:264, took 0,333484 s
+25/06/15 18:11:41 INFO MemoryStore: Block broadcast_18 stored as values in memory (estimated size 2.3 MiB, free 431.5 MiB)
+25/06/15 18:11:41 INFO MemoryStore: Block broadcast_18_piece0 stored as bytes in memory (estimated size 420.8 KiB, free 431.1 MiB)
+25/06/15 18:11:41 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on 10.0.2.15:39805 (size: 420.8 KiB, free: 433.9 MiB)
+25/06/15 18:11:41 INFO SparkContext: Created broadcast 18 from $anonfun$withThreadLocalCaptured$1 at FutureTask.java:264
+25/06/15 18:11:41 INFO ShufflePartitionsUtil: For shuffle(4), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+25/06/15 18:11:41 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+25/06/15 18:11:41 INFO CodeGenerator: Code generated in 65.477364 ms
+25/06/15 18:11:41 INFO SparkContext: Starting job: showString at NativeMethodAccessorImpl.java:0
+25/06/15 18:11:41 INFO DAGScheduler: Got job 13 (showString at NativeMethodAccessorImpl.java:0) with 1 output partitions
+25/06/15 18:11:41 INFO DAGScheduler: Final stage: ResultStage 29 (showString at NativeMethodAccessorImpl.java:0)
+25/06/15 18:11:41 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 28)
+25/06/15 18:11:41 INFO DAGScheduler: Missing parents: List()
+25/06/15 18:11:41 INFO DAGScheduler: Submitting ResultStage 29 (MapPartitionsRDD[57] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+25/06/15 18:11:41 INFO MemoryStore: Block broadcast_19 stored as values in memory (estimated size 93.8 KiB, free 431.0 MiB)
+25/06/15 18:11:41 INFO MemoryStore: Block broadcast_19_piece0 stored as bytes in memory (estimated size 38.9 KiB, free 431.0 MiB)
+25/06/15 18:11:41 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on 10.0.2.15:39805 (size: 38.9 KiB, free: 433.8 MiB)
+25/06/15 18:11:41 INFO SparkContext: Created broadcast 19 from broadcast at DAGScheduler.scala:1585
+25/06/15 18:11:41 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 29 (MapPartitionsRDD[57] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+25/06/15 18:11:41 INFO TaskSchedulerImpl: Adding task set 29.0 with 1 tasks resource profile 0
+25/06/15 18:11:41 INFO TaskSetManager: Starting task 0.0 in stage 29.0 (TID 89) (10.0.2.15, executor driver, partition 0, NODE_LOCAL, 8999 bytes) 
+25/06/15 18:11:41 INFO Executor: Running task 0.0 in stage 29.0 (TID 89)
+25/06/15 18:11:41 INFO ShuffleBlockFetcherIterator: Getting 8 (584.9 KiB) non-empty blocks including 8 (584.9 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+25/06/15 18:11:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+25/06/15 18:11:41 INFO CodeGenerator: Code generated in 41.763918 ms
+25/06/15 18:11:41 INFO Executor: Finished task 0.0 in stage 29.0 (TID 89). 12347 bytes result sent to driver
+25/06/15 18:11:41 INFO TaskSetManager: Finished task 0.0 in stage 29.0 (TID 89) in 154 ms on 10.0.2.15 (executor driver) (1/1)
+25/06/15 18:11:41 INFO TaskSchedulerImpl: Removed TaskSet 29.0, whose tasks have all completed, from pool 
+25/06/15 18:11:41 INFO DAGScheduler: ResultStage 29 (showString at NativeMethodAccessorImpl.java:0) finished in 0,245 s
+25/06/15 18:11:41 INFO DAGScheduler: Job 13 is finished. Cancelling potential speculative or zombie tasks for this job
+25/06/15 18:11:41 INFO TaskSchedulerImpl: Killing all running tasks in stage 29: Stage finished
+25/06/15 18:11:41 INFO DAGScheduler: Job 13 finished: showString at NativeMethodAccessorImpl.java:0, took 0,309477 s
+25/06/15 18:11:41 INFO SparkContext: SparkContext is stopping with exitCode 0.
+25/06/15 18:11:41 INFO SparkUI: Stopped Spark web UI at http://10.0.2.15:4040
+25/06/15 18:11:41 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+25/06/15 18:11:42 INFO MemoryStore: MemoryStore cleared
+25/06/15 18:11:42 INFO BlockManager: BlockManager stopped
+25/06/15 18:11:42 INFO BlockManagerMaster: BlockManagerMaster stopped
+25/06/15 18:11:42 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+25/06/15 18:11:42 INFO SparkContext: Successfully stopped SparkContext
+25/06/15 18:11:42 INFO ShutdownHookManager: Shutdown hook called
+25/06/15 18:11:42 INFO ShutdownHookManager: Deleting directory /tmp/spark-311085bd-8baf-4d34-b59f-b077bf890b01
+25/06/15 18:11:42 INFO ShutdownHookManager: Deleting directory /tmp/spark-69fbf978-6a6c-453c-83ce-81540ef6728e
+25/06/15 18:11:42 INFO ShutdownHookManager: Deleting directory /tmp/spark-311085bd-8baf-4d34-b59f-b077bf890b01/pyspark-b189b66e-6d5a-4f62-abfc-bc89e502f9bf
+✅ Esecuzione completata. Output salvato in: ../../output/

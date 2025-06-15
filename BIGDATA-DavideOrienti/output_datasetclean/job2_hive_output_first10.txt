@@ -1,0 +1,10 @@
+Abbotsford	2018	basso	1932	61.4	10,10,10
+Aberdeen	1998	basso	442	22.7	1,1,111591
+Abrams	2003	basso	562	32.0	160,160,2003
+Acton	2021	alto	4527	15.4	102,102,102
+Acworth	2018	medio	2324	62.3	2018,2018,24v
+Ada	2017	basso	8563	44.0	10,10,10
+Adams	2017	medio	3402	39.6	0,0,12month12000mile
+Addison	2010	medio	4776	78.5	08,08,08
+Adrian	2018	medio	23345	37.4	10,10,10
+Aiken	2000	basso	38	197.0	19,19,22

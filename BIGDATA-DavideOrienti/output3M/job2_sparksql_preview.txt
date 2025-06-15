@@ -1,0 +1,15 @@
++--------------+----+----------+--------+----------------+-------------------------+
+|city          |year|price_band|num_cars|avg_daysonmarket|top_3_words              |
++--------------+----+----------+--------+----------------+-------------------------+
+|New Hudson    |2018|low       |27      |34.56           |[chevrolet, seat, front] |
+|Stamford      |2020|high      |190     |175.38          |[door, front, steering]  |
+|Norwalk       |2018|medium    |15      |17.53           |[door, front, rear]      |
+|Palisades Park|2018|medium    |2       |127.5           |[vehicle, internet, must]|
+|West Islip    |2017|medium    |37      |45.43           |[rear, front, door]      |
+|Lakewood      |2016|low       |5       |13.0            |[door, front, awards]    |
+|Dover         |2008|low       |4       |44.0            |[front, rear, type]      |
+|West Hartford |2012|low       |11      |35.18           |[front, rear, door]      |
+|Greenwich     |2019|medium    |9       |34.67           |[front, power, door]     |
+|Linden        |2015|low       |6       |33.33           |[rear, front, air]       |
++--------------+----+----------+--------+----------------+-------------------------+
+only showing top 10 rows

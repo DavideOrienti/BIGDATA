@@ -1,0 +1,16 @@
++--------------+----+----------+--------+----------------+--------------------------+
+|city          |year|price_band|num_cars|avg_daysonmarket|top_3_words               |
++--------------+----+----------+--------+----------------+--------------------------+
+|Dover         |2008|low       |11      |40.55           |[front, rear, type]       |
+|Garfield      |2008|low       |18      |51.28           |[front, rear, type]       |
+|Lakewood      |2016|low       |81      |48.23           |[front, door, rear]       |
+|Little Falls  |2014|low       |3       |16.33           |[front, seat, power]      |
+|Little Falls  |2019|medium    |100     |77.76           |[front, rear, seat]       |
+|New Hudson    |2018|low       |27      |34.56           |[chevrolet, seat, front]  |
+|Norwalk       |2018|medium    |88      |28.03           |[front, door, wheel]      |
+|Palisades Park|2018|medium    |2       |127.5           |[vehicle, internet, price]|
+|Stamford      |2020|high      |200     |172.27          |[door, front, steering]   |
+|Troy          |2013|medium    |13      |39.69           |[front, door, rear]       |
++--------------+----+----------+--------+----------------+--------------------------+
+only showing top 10 rows
+

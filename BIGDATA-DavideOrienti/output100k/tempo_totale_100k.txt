@@ -1,0 +1,7 @@
+Script,Tempo(s)
+Job1 MapReduce,1
+Job1 Hive,42
+Job1 SparkSQL,50
+Job2 MapReduce,20
+Job2 Hive,40
+Job2 SparkSQL,174

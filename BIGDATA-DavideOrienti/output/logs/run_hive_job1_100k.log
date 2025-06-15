@@ -1,0 +1,91 @@
+==> Avvio JOB 1 Hive...
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/davide/hive/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/davide/BIGDATI/hadoop-3.4.1/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/home/davide/hive/lib/hive-common-2.3.9.jar!/hive-log4j2.properties Async: true
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.hadoop.hive.common.StringInternUtils (file:/home/davide/hive/lib/hive-common-2.3.9.jar) to field java.net.URI.string
+WARNING: Please consider reporting this to the maintainers of org.apache.hadoop.hive.common.StringInternUtils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+OK
+Time taken: 4.976 seconds
+OK
+Time taken: 0.027 seconds
+OK
+Time taken: 0.813 seconds
+OK
+Time taken: 0.35 seconds
+OK
+Time taken: 0.215 seconds
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
+Query ID = davide_20250615182143_9d62ee3a-da59-4b6b-9bed-6f6c41266dab
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 10
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Job running in-process (local Hadoop)
+2025-06-15 18:21:46,588 Stage-1 map = 0%,  reduce = 0%
+2025-06-15 18:21:48,621 Stage-1 map = 100%,  reduce = 0%
+2025-06-15 18:22:03,048 Stage-1 map = 100%,  reduce = 10%
+2025-06-15 18:22:04,051 Stage-1 map = 100%,  reduce = 40%
+2025-06-15 18:22:05,067 Stage-1 map = 100%,  reduce = 70%
+2025-06-15 18:22:06,079 Stage-1 map = 100%,  reduce = 90%
+2025-06-15 18:22:07,085 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_local312437952_0001
+Moving data to directory hdfs://localhost:9000/user/hive/warehouse/car_data.db/job1_stats
+MapReduce Jobs Launched: 
+Stage-Stage-1:  HDFS Read: 39345690154 HDFS Write: 463312 SUCCESS
+Total MapReduce CPU Time Spent: 0 msec
+OK
+Time taken: 24.93 seconds
+OK
+Acura	Integra	1	47900.0	47900.0	47900.0	[2001]
+Acura	RDX	2766	4995.0	49525.0	33425.83	[2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021]
+Acura	RL	53	1999.0	14995.0	6873.89	[1997,1999,2000,2002,2003,2005,2006,2007,2008,2009,2010,2011]
+Acura	TLX	1958	11995.0	259881.0	30070.14	[2015,2016,2017,2018,2019,2020]
+Aston Martin	V12 Vanquish	4	62995.0	92290.0	77798.0	[2003,2005,2006]
+Audi	A4 Avant	41	1995.0	13995.0	8275.22	[2004,2005,2006,2007,2008,2009,2010,2011,2012]
+Audi	S4 Avant	4	10990.0	16999.0	13244.75	[2004,2005,2008]
+BMW	5 Series	2772	2100.0	87999.0	33911.57	[1986,1990,1993,1994,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020]
+BMW	M5	102	9995.0	124145.0	60665.64	[2000,2001,2002,2003,2006,2007,2008,2013,2014,2015,2016,2018,2019,2020]
+BMW	X4	199	19882.0	70370.0	38900.94	[2015,2016,2017,2018,2019,2020]
+Time taken: 0.145 seconds, Fetched: 10 row(s)
+
+==> Prime 10 righe del risultato di JOB 1:
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/davide/hive/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/davide/BIGDATI/hadoop-3.4.1/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/home/davide/hive/lib/hive-common-2.3.9.jar!/hive-log4j2.properties Async: true
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.hadoop.hive.common.StringInternUtils (file:/home/davide/hive/lib/hive-common-2.3.9.jar) to field java.net.URI.string
+WARNING: Please consider reporting this to the maintainers of org.apache.hadoop.hive.common.StringInternUtils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+OK
+Time taken: 4.639 seconds
+OK
+Acura	Integra	1	47900.0	47900.0	47900.0	[2001]
+Acura	RDX	2766	4995.0	49525.0	33425.83	[2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021]
+Acura	RL	53	1999.0	14995.0	6873.89	[1997,1999,2000,2002,2003,2005,2006,2007,2008,2009,2010,2011]
+Acura	TLX	1958	11995.0	259881.0	30070.14	[2015,2016,2017,2018,2019,2020]
+Aston Martin	V12 Vanquish	4	62995.0	92290.0	77798.0	[2003,2005,2006]
+Audi	A4 Avant	41	1995.0	13995.0	8275.22	[2004,2005,2006,2007,2008,2009,2010,2011,2012]
+Audi	S4 Avant	4	10990.0	16999.0	13244.75	[2004,2005,2008]
+BMW	5 Series	2772	2100.0	87999.0	33911.57	[1986,1990,1993,1994,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020]
+BMW	M5	102	9995.0	124145.0	60665.64	[2000,2001,2002,2003,2006,2007,2008,2013,2014,2015,2016,2018,2019,2020]
+BMW	X4	199	19882.0	70370.0	38900.94	[2015,2016,2017,2018,2019,2020]
+Time taken: 1.792 seconds, Fetched: 10 row(s)
+
+Prime 10 righe salvate in: ../../output/job1_hive_output_first10.txt
